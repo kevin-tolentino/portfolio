@@ -1,3 +1,8 @@
-.logo{
-  width: 30px;
+.cutout{
+  width: 75vw;
+  max-width: 50vh;
+}
+
+.about-me-icons{
+  width: 50%;
 }
