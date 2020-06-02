@@ -1,25 +1,21 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 class Navigation extends React.Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark" fixed="top" expand="lg">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar className="justify-content-between" bg="dark" variant="dark" fixed="top" expand="sm">
+        <Navbar.Brand>Kevin Tolentino</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
+        <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
+          <Nav>
+            {/* Change this component later to <Link> component when implementing
+            the react-scroll dependency */}
+            <Nav.Link>About Me</Nav.Link>
+            <Nav.Link>Skills</Nav.Link>
+            <Nav.Link>Tools</Nav.Link>
+            <Nav.Link>Applications</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
