@@ -82,7 +82,9 @@
     }
   },
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "react": "16.12.0",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "16.12.0"
   },
   "devDependencies": {
