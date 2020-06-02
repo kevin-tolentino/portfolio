@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './navigation';
+import AboutMe from './about-me';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -10,7 +11,10 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Navigation />
+      <>
+        <Navigation />
+        <AboutMe />
+      </>
     );
   }
 }
