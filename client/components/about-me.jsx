@@ -6,18 +6,35 @@ function AboutMe(props) {
       <div className="row">
         <div className="p-1 col-md d-flex flex-column align-items-center justify-content-center">
           <div className="my-2 d-flex justify-content-center">
-            <img className="cutout" src="/images/profile-cutout-1.png" alt="Profile Cut Out"/>
+            <img className="cutout" src="/images/profile-cutout-3.png" alt="Profile Cut Out"/>
           </div>
+          {/* consider adding tooltips via bootstrap for these icons */}
           <div className="about-me-icons my-2 d-flex justify-content-between">
             <div className="icon-styling">
               <a href="https://github.com/kevin-tolentino" target="_blank" rel="noopener noreferrer">
                 <i className="mx-1 fab fa-github fa-2x"></i>
               </a>
             </div>
-            <i className="mx-1 fab fa-linkedin fa-2x"></i>
-            <i className="mx-1 fas fa-phone fa-2x"></i>
-            <i className="mx-1 fas fa-envelope fa-2x"></i>
-            <i className="mx-1 fas fa-file-alt fa-2x"></i>
+            <div className="icon-styling">
+              <a href="https://www.linkedin.com/in/kevinstolentino/" target="_blank" rel="noopener noreferrer">
+                <i className="mx-1 fab fa-linkedin fa-2x"></i>
+              </a>
+            </div>
+            <div className="icon-styling">
+              <a href="tel:562-303-7446">
+                <i className="mx-1 fas fa-phone fa-2x"></i>
+              </a>
+            </div>
+            <div className="icon-styling">
+              <a href="mailto:kevin.tolentino95@gmail.com">
+                <i className="mx-1 fas fa-envelope fa-2x"></i>
+              </a>
+            </div>
+            <div className="icon-styling">
+              <a href="/images/Kevin_Tolentino_Resume_V5.pdf" download>
+                <i className="mx-1 fas fa-file-alt fa-2x"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div className="p-3 col-md">

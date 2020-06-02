@@ -8,6 +8,9 @@
 }
 
 .icon-styling{
-  border-radius: 50%;
-  border: gray;
+  color: black;
+}
+
+i{
+  color: #000000;
 }
