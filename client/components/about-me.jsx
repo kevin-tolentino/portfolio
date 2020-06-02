@@ -9,7 +9,11 @@ function AboutMe(props) {
             <img className="cutout" src="/images/profile-cutout-1.png" alt="Profile Cut Out"/>
           </div>
           <div className="about-me-icons my-2 d-flex justify-content-between">
-            <i className="mx-1 fab fa-github fa-2x"></i>
+            <div className="icon-styling">
+              <a href="https://github.com/kevin-tolentino" target="_blank" rel="noopener noreferrer">
+                <i className="mx-1 fab fa-github fa-2x"></i>
+              </a>
+            </div>
             <i className="mx-1 fab fa-linkedin fa-2x"></i>
             <i className="mx-1 fas fa-phone fa-2x"></i>
             <i className="mx-1 fas fa-envelope fa-2x"></i>

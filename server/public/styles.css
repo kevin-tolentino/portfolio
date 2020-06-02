@@ -6,3 +6,8 @@
 .about-me-icons{
   width: 50%;
 }
+
+.icon-styling{
+  border-radius: 50%;
+  border: gray;
+}
