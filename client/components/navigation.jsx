@@ -16,6 +16,7 @@ class Navigation extends React.Component {
             <Nav.Link>Skills</Nav.Link>
             <Nav.Link>Tools</Nav.Link>
             <Nav.Link>Applications</Nav.Link>
+            <Nav.Link>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
