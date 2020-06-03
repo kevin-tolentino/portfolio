@@ -23,11 +23,11 @@ const toolsImages = [{
 },
 {
   name: 'Chrome Dev Tools',
-  path: '/images/tools/06-chrome-original.svg'
+  path: '/images/tools/06-chrome-plain.svg'
 },
 {
   name: 'Figma',
-  path: '/images/tools/07-figma-brands.svg'
+  path: '/images/tools/07-figma.svg'
 },
 {
   name: 'AWS',
@@ -45,7 +45,7 @@ const toolsImages = [{
 
 function Tools(props) {
   return (
-    <div className="container-xl bg-light">
+    <div className="pb-4 container-xl bg-secondary">
       <div className="row">
         <div className="p-3 col">
           <h2>Tools</h2>

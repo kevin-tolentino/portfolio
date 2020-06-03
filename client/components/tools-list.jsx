@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SkillsListItem(props) {
+function ToolsListItem(props) {
   return (
 
     <div className="col-6 col-md-4">
@@ -15,12 +15,12 @@ function SkillsListItem(props) {
   );
 }
 
-function SkillsList(props) {
+function ToolsList(props) {
   return (
     <div className="row flex-wrap">
       {props.devIcon.map(currentIcon => {
         return (
-          <SkillsListItem key={currentIcon.name} image={currentIcon} />
+          <ToolsListItem key={currentIcon.name} image={currentIcon} />
         );
       })}
     </div>
@@ -28,4 +28,4 @@ function SkillsList(props) {
   );
 }
 
-export default SkillsList;
+export default ToolsList;
