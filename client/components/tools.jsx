@@ -2,36 +2,44 @@ import React from 'react';
 import ToolsList from './tools-list';
 
 const toolsImages = [{
-  name: 'JavaScript',
-  path: '/images/skills/01-javascript-original.svg'
+  name: 'Github',
+  path: '/images/tools/01-github-original.svg'
 },
 {
-  name: 'React.js',
-  path: '/images/skills/02-react-original-wordmark.svg'
+  name: 'VS Code',
+  path: '/images/tools/02-visualstudio-plain.svg'
 },
 {
-  name: 'Node.js',
-  path: '/images/skills/03-nodejs-original.svg'
+  name: 'npm',
+  path: '/images/tools/03-npm-original-wordmark.svg'
 },
 {
-  name: 'Express',
-  path: '/images/skills/04-express-original.svg'
+  name: 'Webpack',
+  path: '/images/tools/04-webpack-original.svg'
 },
 {
-  name: 'PostgreSQL',
-  path: '/images/skills/05-postgresql-original.svg'
+  name: 'Babel',
+  path: '/images/tools/05-babel-original.svg'
 },
 {
-  name: 'Bootstrap 4',
-  path: '/images/skills/06-bootstrap-plain.svg'
+  name: 'Chrome Dev Tools',
+  path: '/images/tools/06-chrome-original.svg'
 },
 {
-  name: 'HTML 5',
-  path: '/images/skills/07-html5-original.svg'
+  name: 'Figma',
+  path: '/images/tools/07-figma-brands.svg'
 },
 {
-  name: 'CSS 3',
-  path: '/images/skills/08-css3-original.svg'
+  name: 'AWS',
+  path: '/images/tools/08-amazonwebservices-original.svg'
+},
+{
+  name: 'Ubuntu',
+  path: '/images/tools/09-ubuntu-plain.svg'
+},
+{
+  name: 'Slack',
+  path: '/images/tools/10-slack-original.svg'
 }
 ];
 
