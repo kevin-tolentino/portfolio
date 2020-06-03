@@ -31,7 +31,7 @@ function AboutMe(props) {
               </a>
             </div>
             <div className="icon-styling">
-              <a href="/images/Kevin_Tolentino_Resume_V5.pdf" download>
+              <a href="/images/Kevin_Tolentino_Resume.pdf" download>
                 <i className="mx-1 fas fa-file-alt fa-2x"></i>
               </a>
             </div>

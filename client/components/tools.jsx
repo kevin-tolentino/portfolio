@@ -1,7 +1,7 @@
 import React from 'react';
-import SkillsList from './skills-list';
+import ToolsList from './tools-list';
 
-const skillsImages = [{
+const toolsImages = [{
   name: 'JavaScript',
   path: '/images/skills/01-javascript-original.svg'
 },
@@ -35,17 +35,17 @@ const skillsImages = [{
 }
 ];
 
-function Skills(props) {
+function Tools(props) {
   return (
     <div className="container-xl bg-light">
       <div className="row">
         <div className="p-3 col">
-          <h2>Technical Skills</h2>
+          <h2>Tools</h2>
         </div>
       </div>
-      <SkillsList devIcon={skillsImages} />
+      <ToolsList devIcon={toolsImages} />
     </div>
   );
 }
 
-export default Skills;
+export default Tools;
