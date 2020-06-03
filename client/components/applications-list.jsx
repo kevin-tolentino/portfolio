@@ -2,13 +2,14 @@ import React from 'react';
 
 function ApplicationListItem(props) {
   return (
-
     <div className="card col-md-4">
-      <div className="d-flex justify-content-center dev-icon-div">
-
+      <img className="card-img-top app-img" src={props.demo} alt={props.name}/>
+      <div className="card-body">
+        <h5 className="card-title">{props.name}</h5>
+        <p className="card-text">{props.desc}</p>
       </div>
-      <div className="text-center">
-
+      <div className="card-footer">
+        {props.tech}
       </div>
     </div>
 
@@ -18,9 +19,14 @@ function ApplicationListItem(props) {
 function ApplicationList(props) {
   return (
     <div className="row flex-wrap">
-      {props.devIcon.map(currentIcon => {
+      {props.applicationList.map(currentApp => {
         return (
-          <ApplicationListItem key={currentIcon.name} image={currentIcon} />
+          <ApplicationListItem key={currentApp.name}
+            demo={currentApp.demo}
+            name={currentApp.name}
+            desc={currentApp.desc} gitHub={props.github}
+            live={currentApp.live}
+            tech={currentApp.tech}/>
         );
       })}
     </div>

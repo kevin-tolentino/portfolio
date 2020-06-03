@@ -3,6 +3,7 @@ import Navigation from './navigation';
 import AboutMe from './about-me';
 import Skills from './skills';
 import Tools from './tools';
+import Applications from './applications';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -18,6 +19,7 @@ export default class App extends React.Component {
         <AboutMe />
         <Skills />
         <Tools />
+        <Applications />
       </>
     );
   }
