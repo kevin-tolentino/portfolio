@@ -8,7 +8,7 @@ class Navigation extends React.Component {
 
       <Navbar className="justify-content-between" bg="light" variant="light" sticky="top" expand="sm">
 
-        <Navbar.Brand><i className="mx-1 fab fa-github fa-2x"></i> Kevin Tolentino</Navbar.Brand>
+        <Navbar.Brand><i className="fas fa-laptop-code"></i> Kevin Tolentino</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
           <Nav>
