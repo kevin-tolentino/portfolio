@@ -4,6 +4,7 @@ import AboutMe from './about-me';
 import Skills from './skills';
 import Tools from './tools';
 import Applications from './applications';
+import Contact from './contact';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
         <Skills />
         <Tools />
         <Applications />
+        <Contact />
       </>
     );
   }
