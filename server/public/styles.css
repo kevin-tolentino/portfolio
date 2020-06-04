@@ -30,6 +30,37 @@ i {
   margin-right: 20px;
 }
 
+footer{
+  min-height: 99vh;
+}
+
+.footer-content{
+  min-height: 90vh;
+}
+
+.contact-text a {
+  color: black;
+}
+
+.contact-text a:hover {
+  color: blue;
+}
+
+.component{
+  min-height: 90vh;
+}
+
+.contact-icon{
+  margin-right: 5px;
+}
+
+.tech-item span{
+  font-size: small;
+  background-color: cadetblue;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
 @media screen
   and (min-width: 768px)
  {
