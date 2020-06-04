@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutMe(props) {
   return (
-    <div className="container-xl bg-light">
+    <div id="about-me" className="container-xl bg-light">
       <div className="row">
         <div className="p-1 col-md d-flex flex-column align-items-center justify-content-around">
           <div className="my-2 d-flex justify-content-center">

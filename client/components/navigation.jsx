@@ -7,7 +7,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <Navbar
-        collapseOnSelect
+        onSelect={() => { console.log('yes'); }}
         bg="dark"
         variant="dark"
         sticky="top"
@@ -16,14 +16,20 @@ class Navigation extends React.Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
           <Nav>
-            <Nav.Link href="">About Me</Nav.Link>
+            <Nav.Link eventKey='about-me' onClick={() => {
+              scroller.scrollTo('contact', {
+                duration: 800,
+                delay: 0,
+                smooth: 'easeInOutQuart'
+              });
+            }}>About Me</Nav.Link>
             <Nav.Link>Skills</Nav.Link>
             <Nav.Link>Tools</Nav.Link>
             <Nav.Link>Applications</Nav.Link>
             <Nav.Item>
               <Link onClick={() => {
                 scroller.scrollTo('contact', {
-                  durration: 800,
+                  duration: 800,
                   delay: 0,
                   smooth: 'easeInOutQuart'
                 });
