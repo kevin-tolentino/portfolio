@@ -9,6 +9,10 @@
 
 .icon-styling{
   color: black;
+  border: 1px solid cadetblue;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
 }
 
 i {
