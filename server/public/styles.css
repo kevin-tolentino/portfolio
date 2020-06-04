@@ -1,3 +1,7 @@
+nav{
+  height: 8vh;
+}
+
 .cutout{
   width: 75vw;
   max-width: 50vh;
@@ -34,9 +38,6 @@ footer{
   min-height: 99vh;
 }
 
-.footer-content{
-  min-height: 90vh;
-}
 
 .contact-text a {
   color: black;
@@ -46,9 +47,9 @@ footer{
   color: blue;
 }
 
-.component{
+/* .component{
   min-height: 90vh;
-}
+} */
 
 .contact-icon{
   margin-right: 5px;

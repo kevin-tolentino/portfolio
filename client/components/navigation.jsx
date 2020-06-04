@@ -6,11 +6,10 @@ class Navigation extends React.Component {
   render() {
     return (
 
-      <Navbar className="justify-content-between" bg="light" variant="light" sticky="top" expand="sm">
-
+      <Navbar className="justify-content-between" bg="dark" variant="dark" fixed="top" expand="sm">
         <Navbar.Brand><i className="fas fa-laptop-code"></i> Kevin Tolentino</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
+        <Navbar.Collapse id="basic-navbar-nav" className='w-100 bg-dark justify-content-end'>
           <Nav>
             {/* Change this component later to <Link> component when implementing
             the react-scroll dependency */}
