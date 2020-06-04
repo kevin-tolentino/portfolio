@@ -13,7 +13,7 @@ const applicationList = [
   {
     name: 'Succulent Sales',
     desc: 'A full stack Node.js and React shopping cart app for succulent products.',
-    tech: ['React.js', 'Webpack', 'Node.js', 'Express', 'PostgreSQL', 'Bootstrap 4'],
+    tech: ['React.js', 'Webpack', 'Node.js', 'Express', 'Bootstrap 4', 'PostgreSQL'],
     demo: '/images/app-images/succulent-demo.gif',
     gitHub: 'https://github.com/kevin-tolentino/succulent-sales-js',
     live: 'https://succulent-sales.kevintolentino.com/'

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 class Navigation extends React.Component {
   render() {
@@ -17,7 +18,7 @@ class Navigation extends React.Component {
             <Nav.Link>Skills</Nav.Link>
             <Nav.Link>Tools</Nav.Link>
             <Nav.Link>Applications</Nav.Link>
-            <Nav.Link>Contact</Nav.Link>
+            <Nav.Link><Link activeClass="active" className="test1" to="contact" spy={true} smooth={true} duration={500} >Contact</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact(props) {
   return (
-    <footer className="container-fluid pb-4 bg-light d-flex flex-column justify-content-center">
+    <footer id="contact" className="container-fluid pb-4 bg-light d-flex flex-column justify-content-center">
       <div className="row my-4">
         <div className="col">
           <h3 className="text-center">Kevin Tolentino</h3>
