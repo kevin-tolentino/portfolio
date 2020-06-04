@@ -4,11 +4,23 @@
 }
 
 .about-me-icons{
-  width: 50%;
+  width: 80%;
 }
 
-.icon-styling{
+.about-icon-styling{
+    color: black;
+  border: 1px solid cadetblue;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+.contact-icon-styling{
   color: black;
+  border: 1px solid cadetblue;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
 }
 
 i {
@@ -34,9 +46,6 @@ footer{
   min-height: 99vh;
 }
 
-.footer-content{
-  min-height: 90vh;
-}
 
 .contact-text a {
   color: black;
