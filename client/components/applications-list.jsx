@@ -33,7 +33,7 @@ function ApplicationListItem(props) {
 
 function ApplicationList(props) {
   return (
-    <div className="p-4 row flex-wrap justify-content-around component">
+    <div className="p-4 row flex-wrap justify-content-around">
       {props.applicationList.map(currentApp => {
         return (
 
