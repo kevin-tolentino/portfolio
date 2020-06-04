@@ -9,14 +9,14 @@ function Contact(props) {
         </div>
       </div>
       <div className="row my-4 justify-content-center">
-        <div className="text-center col-md-2">
-          <p><i className="contact-icon fas fa-map-marker-alt fa-2x"></i> Los Angeles, CA</p>
+        <div className="text-center col-lg">
+          <i className="contact-icon fas fa-map-marker-alt"></i> Los Angeles, CA
         </div>
-        <div className="text-center contact-text col-md-2">
-          <a href="tel:562-303-7446"><i className="contact-icon fa-2x fas fa-phone-alt"></i> (562) 303-7446</a>
+        <div className="text-center contact-text col-lg">
+          <a href="tel:562-303-7446"><i className="contact-icon fas fa-phone-alt"></i> (562) 303-7446</a>
         </div>
-        <div className="text-center contact-text col-md-2">
-          <a href="mailto:kevin.tolentino95@gmail.com"><i className="contact-icon fas fa-envelope fa-2x"></i>kevin.tolentino95@gmail.com</a>
+        <div className="text-center contact-text col-lg">
+          <a href="mailto:kevin.tolentino95@gmail.com"><i className="contact-icon fas fa-envelope"></i> kevin.tolentino95@gmail.com</a>
         </div>
       </div>
     </footer>
