@@ -50,6 +50,16 @@ footer{
   min-height: 90vh;
 }
 
+.contact-icon{
+  margin-right: 5px;
+}
+
+.tech-item{
+
+  font-size: small;
+  background-color: cadetblue;
+}
+
 @media screen
   and (min-width: 768px)
  {

@@ -18,13 +18,13 @@ function ApplicationListItem(props) {
           <h5 className="card-title">{props.name}</h5>
           <p className="card-text">{props.desc}</p>
         </div>
+        <p className="tech-item">{techItems}</p>
+      </div>
+      <div className="card-footer">
         <div className="d-flex justify-content-center">
           <a className="m-1 btn btn-primary" href={props.gitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
           <a className="m-1 btn btn-secondary" href={props.live} target="_blank" rel="noopener noreferrer">Live</a>
         </div>
-      </div>
-      <div className="card-footer">
-        {techItems}
       </div>
     </div>
 
