@@ -21,13 +21,13 @@ function Contact(props) {
       </div>
       <div className="row justify-content-center">
         <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="https://github.com/kevin-tolentino" target="_blank" rel="noopener noreferrer">
-          <i className="mx-1 fab fa-github fa-2x"></i>
+          <i className="mx-1 fab fa-github"></i>
         </a>
         <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="https://www.linkedin.com/in/kevinstolentino/" target="_blank" rel="noopener noreferrer">
-          <i className="mx-1 fab fa-linkedin fa-2x"></i>
+          <i className="mx-1 fab fa-linkedin"></i>
         </a>
         <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="/images/Kevin_Tolentino_Resume.pdf" download>
-          <i className="mx-1 fas fa-file-alt fa-2x"></i>
+          <i className="mx-1 fas fa-file-alt"></i>
         </a>
       </div>
     </footer>
