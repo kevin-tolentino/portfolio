@@ -30,6 +30,14 @@ i {
   margin-right: 20px;
 }
 
+footer{
+  min-height: 100vh;
+}
+
+.footer-content{
+  min-height: 90vh;
+}
+
 @media screen
   and (min-width: 768px)
  {
