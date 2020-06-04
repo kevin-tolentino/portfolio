@@ -11,15 +11,22 @@ class Navigation extends React.Component {
         onSelect={selectedKey => {
           scroller.scrollTo(selectedKey, {
             duration: 800,
-            delay: 0,
-            smooth: 'easeInOutQuart'
+            delay: 100,
+            smooth: 'easeInOutQuint',
+            offset: (window.innerWidth <= 575 ? -20 : -50)
           });
         }}
         bg="dark"
         variant="dark"
         sticky="top"
         expand="sm">
-        <Navbar.Brand><i className="fas fa-laptop-code"></i> Kevin Tolentino</Navbar.Brand>
+        <Navbar.Brand onClick={() => {
+          scroll.scrollToTop({
+            duration: 800,
+            delay: 100,
+            smooth: 'easeInOutQuint'
+          });
+        }}><i className="fas fa-laptop-code"></i> Kevin Tolentino</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
           <Nav>
