@@ -54,10 +54,11 @@ footer{
   margin-right: 5px;
 }
 
-.tech-item{
-
+.tech-item span{
   font-size: small;
   background-color: cadetblue;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 @media screen
