@@ -1,5 +1,7 @@
 import React from 'react';
 import ApplicationList from './applications-list';
+import GitHubCalendar from 'react-github-calendar';
+import ReactTooltip from 'react-tooltip';
 
 const applicationList = [
   {
@@ -29,6 +31,7 @@ const applicationList = [
 
 function Applications(props) {
   return (
+
     <div className="pb-4 container-xl bg-light component">
       <div id="applications" className="row ">
         <div className="p-3 col">
@@ -36,7 +39,15 @@ function Applications(props) {
         </div>
       </div>
       <ApplicationList applicationList={applicationList}/>
+      <div className="row">
+        <div className="col d-flex justify-content-center bord">
+          <GitHubCalendar username="kevin-tolentino" blockSize={13} fullYear={false}>
+            <ReactTooltip delayShow={50} html />
+          </GitHubCalendar>
+        </div>
+      </div>
     </div>
+
   );
 }
 

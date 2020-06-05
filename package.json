@@ -86,7 +86,9 @@
     "react": "16.12.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "16.12.0",
-    "react-scroll": "^1.7.16"
+    "react-github-calendar": "^1.0.4",
+    "react-scroll": "^1.7.16",
+    "react-tooltip": "^4.2.6"
   },
   "devDependencies": {
     "@babel/core": "7.8.0",
