@@ -1,6 +1,7 @@
 .cutout{
   width: 75vw;
   max-width: 50vh;
+  object-fit: contain;
 }
 
 .about-me-icons{
