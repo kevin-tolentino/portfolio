@@ -70,6 +70,10 @@ footer{
   margin-right: 2px;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 @media screen
   and (min-width: 768px)
  {
