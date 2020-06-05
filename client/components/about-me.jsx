@@ -2,8 +2,8 @@ import React from 'react';
 
 function AboutMe(props) {
   return (
-    <div id="about-me" className="container-xl bg-secondary text-light">
-      <div className="row">
+    <div id="about-me" className="container-xl bg-secondary text-light component d-flex align-items-center">
+      <div className="row py-2 align-items-center">
         <div className="p-1 col-md-5 d-flex flex-column align-items-center justify-content-around">
           <div className="my-2 d-flex justify-content-center">
             <img className="cutout" src="/images/profile-cutout-3.png" alt="Profile Cut Out"/>
