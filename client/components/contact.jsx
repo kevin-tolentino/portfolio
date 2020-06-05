@@ -1,4 +1,5 @@
 import React from 'react';
+import GitHubCalendar from 'react-github-calendar';
 
 function Contact(props) {
   return (
@@ -29,6 +30,11 @@ function Contact(props) {
         <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="/images/Kevin_Tolentino_Resume.pdf" download>
           <i className="mx-1 fas fa-file-alt"></i>
         </a>
+      </div>
+      <div className="row my-4">
+        <div className="col d-flex justify-content-center">
+          <GitHubCalendar username="kevin-tolentino" />
+        </div>
       </div>
     </footer>
   );
