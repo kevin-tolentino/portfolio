@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import Navbar from 'react-bootstrap/Navbar';
 // import Nav from 'react-bootstrap/Nav';
-import { scroller, animateScroll as scroll } from 'react-scroll';
+import { Link, scroller, animateScroll as scroll } from 'react-scroll';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 const Navigation = props => {
@@ -11,16 +11,27 @@ const Navigation = props => {
 
   return (
 
-    <Navbar className="sticky-top" color="dark" dark expand="md">
-      <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
+    <Navbar className="sticky-top"
+      color="dark"
+      dark
+      expand="md">
+      <NavbarBrand
+        onClick={() => {
+          scroll.scrollToTop({
+            duration: 800,
+            delay: 100,
+            smooth: 'easeInOutQuint'
+          });
+        }}
+        className="mr-auto"><i className="fas fa-laptop-code"></i> Kevin Tolentino</NavbarBrand>
       <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-      <Collapse isOpen={!collapsed} navbar>
+      <Collapse className="justify-content-end" isOpen={!collapsed} navbar>
         <Nav navbar>
           <NavItem>
-            <NavLink href="/components/">Components</NavLink>
+            {/* insert Link component */}
           </NavItem>
           <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            {/* insert Link component */}
           </NavItem>
         </Nav>
       </Collapse>
@@ -46,12 +57,12 @@ const Navigation = props => {
 //         variant="dark"
 //         sticky="top"
 //         expand="sm">
-//         <Navbar.Brand onClick={() => {
-//           scroll.scrollToTop({
-//             duration: 800,
-//             delay: 100,
-//             smooth: 'easeInOutQuint'
-//           });
+// <Navbar.Brand onClick={() => {
+//   scroll.scrollToTop({
+//     duration: 800,
+//     delay: 100,
+//     smooth: 'easeInOutQuint'
+//   });
 //         }}><i className="fas fa-laptop-code"></i> Kevin Tolentino</Navbar.Brand>
 //         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 //         <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
