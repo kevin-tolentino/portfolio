@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-// import Navbar from 'react-bootstrap/Navbar';
-// import Nav from 'react-bootstrap/Nav';
-import { Link, scroller, animateScroll as scroll } from 'react-scroll';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
 
 const Navigation = props => {
   const [collapsed, setCollapsed] = useState(true);
@@ -22,6 +20,7 @@ const Navigation = props => {
             delay: 100,
             smooth: 'easeInOutQuint'
           });
+          toggleNavbar();
         }}
         className="cursor-pointer mr-auto"><i className="fas fa-laptop-code"></i> Kevin Tolentino</NavbarBrand>
       <NavbarToggler onClick={toggleNavbar} className="mr-2" />
@@ -36,7 +35,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -55)}
+              offset={(window.innerWidth <= 575 ? -255 : -40)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
                 About Me
             </Link>
@@ -50,7 +49,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -55)}
+              offset={(window.innerWidth <= 575 ? -59 : -40)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Technical Skills
             </Link>
@@ -64,7 +63,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -55)}
+              offset={(window.innerWidth <= 575 ? -59 : -40)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Tools
             </Link>
@@ -78,7 +77,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -55)}
+              offset={(window.innerWidth <= 575 ? -59 : -40)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Applications
             </Link>
@@ -92,7 +91,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -55)}
+              offset={(window.innerWidth <= 575 ? -59 : -40)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Contact
             </Link>
