@@ -1,6 +1,17 @@
 .cutout{
   width: 75vw;
   max-width: 50vh;
+  object-fit: contain;
+}
+
+.logo{
+    min-width: 100px;
+  width: 114px;
+  /* height: 100px; */
+}
+
+.contact-logo{
+  width: 50%;
 }
 
 .about-me-icons{
@@ -63,6 +74,11 @@ footer{
   margin-right: 5px;
 }
 
+.contact-logo{
+  width: 25vw;
+  max-width: 35vh;
+}
+
 .tech-item span{
   font-size: small;
   background-color: cadetblue;
@@ -70,12 +86,19 @@ footer{
   margin-right: 2px;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 @media screen
-  and (min-width: 768px)
+  and (max-width: 768px)
  {
    .dev-icon{
      min-width: 150px;
      width: 150px;
      height: 150px
    }
+   .contact-logo{
+  min-width: 50vw;
+}
 }

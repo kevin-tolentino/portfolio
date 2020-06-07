@@ -2,9 +2,9 @@ import React from 'react';
 
 function AboutMe(props) {
   return (
-    <div id="about-me" className="container-xl bg-light">
-      <div className="row">
-        <div className="p-1 col-md d-flex flex-column align-items-center justify-content-around">
+    <div id="about-me" className="container-xl bg-secondary text-light component d-flex align-items-center">
+      <div className="row py-2 align-items-center">
+        <div className="p-1 col-md-5 d-flex flex-column align-items-center justify-content-around">
           <div className="my-2 d-flex justify-content-center">
             <img className="cutout" src="/images/profile-cutout-3.png" alt="Profile Cut Out"/>
           </div>
@@ -27,7 +27,7 @@ function AboutMe(props) {
             </a>
           </div>
         </div>
-        <div className="p-3 col-md">
+        <div className="p-3 col-md-7">
           <h2>About Me</h2>
           <p>Hello! My name is Kevin Tolentino, and I&apos;m a Web Developer passionate about coding, working in a team, learning new things related to code, and developing software that will help others! I also love assisting others in connecting the dots and walking alongside them as their support.</p>
           <p>I&apos;ve had the privilege of working in roles such as a Library Page, Church Youth Group Director Intern, and Data Entry Clerk. These roles developed my compassion, teamwork, and technical skills, all of which I have brought with me on this journey of being a web developer.</p>
