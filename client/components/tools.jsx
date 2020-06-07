@@ -45,7 +45,7 @@ const toolsImages = [{
 
 function Tools(props) {
   return (
-    <div id="tools" className="pb-4 container-xl bg-secondary component text-light">
+    <div id="tools" className="pb-4 container-xl component ">
       <div className="row">
         <div className="p-3 col">
           <h2>Tools</h2>

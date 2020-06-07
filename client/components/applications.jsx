@@ -32,7 +32,7 @@ const applicationList = [
 function Applications(props) {
   return (
 
-    <div id="applications"className="pb-4 container-xl bg-light component">
+    <div id="applications"className="pb-4 container-xl bg-dark text-white component">
       <div className="row ">
         <div className="p-3 col">
           <h2>Applications</h2>
