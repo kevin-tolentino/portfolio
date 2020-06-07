@@ -39,7 +39,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -255 : -63)}
+              offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
                 About Me
             </Link>
@@ -53,7 +53,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -63)}
+              offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Technical Skills
             </Link>
@@ -67,7 +67,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -63)}
+              offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Tools
             </Link>
@@ -81,7 +81,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -63)}
+              offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Applications
             </Link>
@@ -95,7 +95,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={100}
               duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -63)}
+              offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Contact
             </Link>
