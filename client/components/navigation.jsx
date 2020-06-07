@@ -20,7 +20,9 @@ const Navigation = props => {
             delay: 100,
             smooth: 'easeInOutQuint'
           });
-          // toggleNavbar();
+          if (collapsed === false) {
+            toggleNavbar();
+          }
         }}
         className="cursor-pointer mr-auto"><img className="logo" src="/images/logo-white.png" alt="logo-white"/></NavbarBrand>
       <NavbarToggler onClick={toggleNavbar} className="mr-2" />
