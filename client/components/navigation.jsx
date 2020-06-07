@@ -20,9 +20,9 @@ const Navigation = props => {
             delay: 100,
             smooth: 'easeInOutQuint'
           });
-          toggleNavbar();
+          // toggleNavbar();
         }}
-        className="cursor-pointer mr-auto"><i className="fas fa-laptop-code"></i> Kevin Tolentino</NavbarBrand>
+        className="cursor-pointer mr-auto"><img className="logo" src="/images/logo-white.png" alt="logo-white"/></NavbarBrand>
       <NavbarToggler onClick={toggleNavbar} className="mr-2" />
       <Collapse className="justify-content-end" isOpen={!collapsed} navbar>
         <Nav navbar>

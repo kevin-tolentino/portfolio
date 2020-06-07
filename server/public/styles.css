@@ -4,6 +4,16 @@
   object-fit: contain;
 }
 
+.logo{
+    min-width: 100px;
+  width: 114px;
+  /* height: 100px; */
+}
+
+.contact-logo{
+  width: 50%;
+}
+
 .about-me-icons{
   width: 80%;
 }

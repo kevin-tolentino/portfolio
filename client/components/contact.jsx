@@ -2,10 +2,10 @@ import React from 'react';
 
 function Contact(props) {
   return (
-    <footer id="contact" className="text-light container-fluid pb-4 bg-secondary d-flex flex-column justify-content-center">
+    <footer id="contact" className="text-light container-fluid pb-4 bg-dark d-flex flex-column justify-content-center">
       <div className="row my-4">
-        <div className="col">
-          <h3 className="text-center">Kevin Tolentino</h3>
+        <div className="col d-flex justify-content-center">
+          <img className="contact-logo" src="/images/logo-name-white.png" alt="White logo contact"/>
         </div>
       </div>
       <div className="row my-4 justify-content-center">
