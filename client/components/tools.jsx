@@ -22,10 +22,6 @@ const toolsImages = [{
   path: '/images/tools/05-babel-original.svg'
 },
 {
-  name: 'Chrome Dev Tools',
-  path: '/images/tools/06-chrome-plain.svg'
-},
-{
   name: 'Figma',
   path: '/images/tools/07-figma.svg'
 },
