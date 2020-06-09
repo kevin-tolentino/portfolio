@@ -7,7 +7,9 @@ const Navigation = props => {
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
-  // const render =
+  const offset = (window.innerWidth <= 575 ? -280 : -63);
+  const delay = 0;
+  const duration = 1000;
 
   return (
 
@@ -37,9 +39,9 @@ const Navigation = props => {
               to="about-me"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
-              offset={(window.innerWidth <= 575 ? -280 : -63)}
+              delay={delay}
+              duration={duration}
+              offset={offset}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
                 About Me
             </Link>
@@ -51,8 +53,8 @@ const Navigation = props => {
               to="skills"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
+              delay={delay}
+              duration={duration}
               offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Technical Skills
@@ -65,8 +67,8 @@ const Navigation = props => {
               to="tools"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
+              delay={delay}
+              duration={duration}
               offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Tools
@@ -79,8 +81,8 @@ const Navigation = props => {
               to="applications"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
+              delay={delay}
+              duration={duration}
               offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Applications
@@ -93,8 +95,8 @@ const Navigation = props => {
               to="contact"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
+              delay={delay}
+              duration={duration}
               offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Contact
