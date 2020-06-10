@@ -42,6 +42,7 @@ const Navigation = props => {
               delay={delay}
               duration={duration}
               offset={offset}
+              isDynamic={true}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
                 About Me
             </Link>

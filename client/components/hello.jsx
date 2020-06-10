@@ -23,7 +23,8 @@ class Hello extends React.Component {
               delay: 0,
               smooth: 'easeInOutQuart'
             });
-          }} className='cursor-pointer hero-icon-div d-flex flex-column align-items-center justify-content-center'>
+          }}
+          className='cursor-pointer hero-icon-div d-flex flex-column align-items-center justify-content-center'>
             <div className="hero-logo-container">
               <img className="hero-logo" src="/images/logo-white.png" alt="logo-white" />
               <div className="hero-logo-div-sibling"></div>
