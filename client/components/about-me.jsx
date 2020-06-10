@@ -2,16 +2,16 @@ import React from 'react';
 
 function AboutMe(props) {
   return (
-    <div id="about-me" className="container-xl bg-secondary text-light component d-flex align-items-center">
+    <div id="about-me" className="container-xl bg-white component d-flex align-items-center">
       <div className="row py-2 align-items-center">
         <div className="p-1 col-md-5 d-flex flex-column align-items-center justify-content-around">
           <div className="my-2 d-flex justify-content-center">
             <img className="cutout" src="/images/profile-cutout-3.png" alt="Profile Cut Out"/>
           </div>
           {/* consider adding tooltips via bootstrap for these icons */}
-          <div className="about-me-icons my-2 d-flex justify-content-between">
+          <div className="about-me-icons-div my-2 d-flex justify-content-between">
             <a className="about-icon-styling d-flex justify-content-center align-items-center" href="https://github.com/kevin-tolentino" target="_blank" rel="noopener noreferrer">
-              <i className="mx-1 fab fa-github "></i>
+              <i className="icon-hover mx-1 fab fa-github "></i>
             </a>
             <a className="about-icon-styling d-flex justify-content-center align-items-center" href="https://www.linkedin.com/in/kevinstolentino/" target="_blank" rel="noopener noreferrer">
               <i className="mx-1 fab fa-linkedin "></i>

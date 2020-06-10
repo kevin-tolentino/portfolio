@@ -32,7 +32,7 @@ const applicationList = [
 function Applications(props) {
   return (
 
-    <div id="applications"className="pb-4 container-xl bg-light component">
+    <div id="applications"className="pb-4 container-xl bg-dark text-white component">
       <div className="row ">
         <div className="p-3 col">
           <h2>Applications</h2>
@@ -40,7 +40,7 @@ function Applications(props) {
       </div>
       <ApplicationList applicationList={applicationList}/>
       <div className="row">
-        <div className="col d-flex justify-content-center bord">
+        <div className="col d-flex justify-content-center bg-secondary">
           <GitHubCalendar username="kevin-tolentino" blockSize={13} fullYear={false}>
             <ReactTooltip delayShow={50} html />
           </GitHubCalendar>

@@ -1,3 +1,7 @@
+/* .navigation-background{
+  background-color: rgba(15, 76, 129, 0.61)
+} */
+
 .cutout{
   width: 75vw;
   max-width: 50vh;
@@ -5,37 +9,92 @@
 }
 
 .logo{
-    min-width: 100px;
+  min-width: 100px;
   width: 114px;
-  /* height: 100px; */
+}
+
+.hero-logo-container{
+  position: relative;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-logo-container:hover{
+  background-color: rgba(15, 76, 129, 1);
+
+}
+
+.hero-logo{
+  min-width: 300px;
+  width: 300px;
+}
+
+.hero-logo-div-sibling{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 0 0 rgb(68, 68, 68);
+  animation: pulse 1.5s infinite ease-in-out ;
+}
+
+.hero-icon-div{
+  background-color: ;
+}
+
+
+.hero-icon-row{
+  /* rgba(15, 76, 129, 0.61) */
+  background-color: rgba(20, 29, 57, 0.699);
+  height: 50%;
+  width: 100%;
+}
+
+.hero-text{
+font-weight: lighter;
+}
+
+.hero-image{
+  background-image: url('/images/hero-background-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact-logo{
   width: 50%;
 }
 
-.about-me-icons{
+.about-me-icons-div{
   width: 80%;
 }
 
-.about-icon-styling{
-    color: black;
-  border: 1px solid cadetblue;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-}
-
-.contact-icon-styling{
+.about-icon-styling, .contact-icon-styling{
   color: black;
   border: 1px solid cadetblue;
   width: 3em;
   height: 3em;
   border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-icon-styling i, .contact-icon-styling i{
+  transition: all 0.5s ease-in-out;
+}
+
+.about-icon-styling:hover, .contact-icon-styling:hover{
+  background-color: rgba(15, 76, 129, 1);
+}
+
+.about-icon-styling:hover i, .contact-icon-styling:hover i{
+ color: white;
 }
 
 i {
   color: #000000;
+}
+
+i:hover{
+  text-decoration: none;
 }
 
 .dev-icon-div{
@@ -89,6 +148,28 @@ footer{
 .cursor-pointer{
   cursor: pointer;
 }
+
+a:hover{
+  text-decoration: none;
+}
+
+@keyframes pulse{
+  0% {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, .7);
+  }
+
+  50%{
+    transform: scale(1);
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+
+  100%{
+    transform: scale(0.95);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
 
 @media screen
   and (max-width: 768px)

@@ -7,11 +7,13 @@ const Navigation = props => {
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
-  // const render =
+  const offset = (window.innerWidth <= 575 ? -280 : -63);
+  const delay = 0;
+  const duration = 1000;
 
   return (
 
-    <Navbar className="sticky-top"
+    <Navbar className="sticky-top navigation-background"
       color="dark"
       dark
       expand="sm">
@@ -37,9 +39,9 @@ const Navigation = props => {
               to="about-me"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
-              offset={(window.innerWidth <= 575 ? -255 : -63)}
+              delay={delay}
+              duration={duration}
+              offset={offset}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
                 About Me
             </Link>
@@ -51,9 +53,9 @@ const Navigation = props => {
               to="skills"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -63)}
+              delay={delay}
+              duration={duration}
+              offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Technical Skills
             </Link>
@@ -65,9 +67,9 @@ const Navigation = props => {
               to="tools"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -63)}
+              delay={delay}
+              duration={duration}
+              offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Tools
             </Link>
@@ -79,9 +81,9 @@ const Navigation = props => {
               to="applications"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -63)}
+              delay={delay}
+              duration={duration}
+              offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Applications
             </Link>
@@ -93,9 +95,9 @@ const Navigation = props => {
               to="contact"
               spy={true}
               smooth='easeInOutQuint'
-              delay={100}
-              duration={500}
-              offset={(window.innerWidth <= 575 ? -59 : -63)}
+              delay={delay}
+              duration={duration}
+              offset={(window.innerWidth <= 575 ? -280 : -63)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Contact
             </Link>
@@ -106,50 +108,5 @@ const Navigation = props => {
 
   );
 };
-
-//
-//
-// tools
-// applications
-// contact
-
-// class Navigation extends React.Component {
-//   render() {
-//     return (
-//       <Navbar
-//         collapseOnSelect
-//         onSelect={
-//           selectedKey => {
-//             scroller.scrollTo(selectedKey, {
-//               duration: 1000,
-//               smooth: 'easeInOutQuint',
-//               offset: (window.innerWidth < 575 ? -250 : -50)
-//             });
-//           }}
-//         bg="dark"
-//         variant="dark"
-//         sticky="top"
-//         expand="sm">
-// <Navbar.Brand onClick={() => {
-//   scroll.scrollToTop({
-//     duration: 800,
-//     delay: 100,
-//     smooth: 'easeInOutQuint'
-//   });
-//         }}><i className="fas fa-laptop-code"></i> Kevin Tolentino</Navbar.Brand>
-//         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-//         <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
-//           <Nav>
-//             <Nav.Link active bsPrefix="nav-link" eventKey="about-me">About Me</Nav.Link>
-//             <Nav.Link active bsPrefix="nav-link" eventKey="skills">Skills</Nav.Link>
-//             <Nav.Link active bsPrefix="nav-link" eventKey="tools">Tools</Nav.Link>
-//             <Nav.Link active bsPrefix="nav-link" eventKey="applications">Applications</Nav.Link>
-//             <Nav.Link active bsPrefix="nav-link" eventKey="contact">Contact</Nav.Link>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Navbar>
-//     );
-//   }
-// }
 
 export default Navigation;
