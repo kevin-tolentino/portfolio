@@ -11,13 +11,25 @@
 .logo{
     min-width: 100px;
   width: 114px;
-  /* height: 100px; */
+}
+
+.hero-logo-container{
+  position: relative;
+  top: 0;
 }
 
 .hero-logo{
   min-width: 300px;
   width: 300px;
-  /* height: 100px; */
+}
+
+.hero-logo-div-sibling{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 0 0 rgb(68, 68, 68);
+  animation: pulse 2s infinite ;
 }
 
 .hero-icon-div{
@@ -50,7 +62,7 @@ font-weight: lighter;
   width: 80%;
 }
 
-.about-icon-styling{
+.about-icon-styling, .contact-icon-styling{
   color: black;
   border: 1px solid cadetblue;
   width: 3em;
@@ -59,22 +71,16 @@ font-weight: lighter;
   transition: all 0.5s ease-in-out;
 }
 
-.about-icon-styling:hover{
+.about-icon-styling i, .contact-icon-styling i{
+  transition: all 0.5s ease-in-out;
+}
+
+.about-icon-styling:hover, .contact-icon-styling:hover{
   background-color: rgba(15, 76, 129, 1);
 }
 
-.about-icon-styling:hover i{
+.about-icon-styling:hover i, .contact-icon-styling:hover i{
  color: white;
-}
-
-
-
-.contact-icon-styling{
-  color: black;
-  border: 1px solid cadetblue;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
 }
 
 i {
@@ -140,6 +146,24 @@ footer{
 a:hover{
   text-decoration: none;
 }
+
+@keyframes pulse{
+  0% {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, .7);
+  }
+
+  50%{
+    transform: scale(1);
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+
+  100%{
+    transform: scale(0.95);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
 
 @media screen
   and (max-width: 768px)
