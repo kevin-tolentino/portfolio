@@ -1,3 +1,7 @@
+/* .navigation-background{
+  background-color: rgba(15, 76, 129, 0.61)
+} */
+
 .cutout{
   width: 75vw;
   max-width: 50vh;
@@ -10,6 +14,28 @@
   /* height: 100px; */
 }
 
+.hero-logo{
+  min-width: 300px;
+  width: 300px;
+  /* height: 100px; */
+}
+
+.hero-icon-div{
+  background-color: ;
+}
+
+
+.hero-icon-row{
+  /* rgba(15, 76, 129, 0.61) */
+  background-color: rgba(20, 29, 57, 0.699);
+  height: 50%;
+  width: 100%;
+}
+
+.hero-text{
+font-weight: lighter;
+}
+
 .hero-image{
   background-image: url('/images/hero-background-3.jpg');
   background-repeat: no-repeat;
@@ -20,17 +46,28 @@
   width: 50%;
 }
 
-.about-me-icons{
+.about-me-icons-div{
   width: 80%;
 }
 
 .about-icon-styling{
-    color: black;
+  color: black;
   border: 1px solid cadetblue;
   width: 3em;
   height: 3em;
   border-radius: 50%;
+  transition: all 0.5s ease-in-out;
 }
+
+.about-icon-styling:hover{
+  background-color: rgba(15, 76, 129, 1);
+}
+
+.about-icon-styling:hover i{
+ color: white;
+}
+
+
 
 .contact-icon-styling{
   color: black;
@@ -42,6 +79,10 @@
 
 i {
   color: #000000;
+}
+
+i:hover{
+  text-decoration: none;
 }
 
 .dev-icon-div{
@@ -94,6 +135,10 @@ footer{
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 @media screen
