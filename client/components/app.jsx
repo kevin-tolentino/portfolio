@@ -11,14 +11,24 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      helloActive: true
     };
+  }
+
+  changeActiveFalse() {
+    this.setState({ helloActive: false });
+  }
+
+  changeActiveTrue() {
+    this.setState({ helloActive: false });
+
   }
 
   render() {
     return (
       <>
         <Navigation />
-        <Hello />
+        <Hello changeActiveFalse={this.changeActiveFalse} changeActiveTrue={this.changeActiveTrue}/>
         <AboutMe />
         <Skills />
         <Tools />
