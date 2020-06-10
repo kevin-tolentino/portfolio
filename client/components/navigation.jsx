@@ -17,18 +17,19 @@ const Navigation = props => {
       color="dark"
       dark
       expand="sm">
-      <NavbarBrand
-        onClick={() => {
-          scroll.scrollToTop({
-            duration: 800,
-            delay: 100,
-            smooth: 'easeInOutQuint'
-          });
-          if (collapsed === false) {
-            toggleNavbar();
-          }
-        }}
-        className="cursor-pointer mr-auto"><img className="logo" src="/images/logo-white.png" alt="logo-white"/></NavbarBrand>
+      <Link
+        activeClass="is-visible"
+        className="text-secondary cursor-pointer not-visible"
+        to="hero"
+        spy={true}
+        smooth='easeInOutQuint'
+        delay={delay}
+        duration={duration}
+        offset={offset}
+        onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
+        <img className="logo" src="/images/logo-white.png" alt="logo-white" />
+      </Link>
+
       <NavbarToggler onClick={toggleNavbar} className="mr-2" />
       <Collapse className="justify-content-end" isOpen={!collapsed} navbar>
         <Nav navbar>
@@ -42,7 +43,6 @@ const Navigation = props => {
               delay={delay}
               duration={duration}
               offset={offset}
-              isDynamic={true}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
                 About Me
             </Link>
