@@ -16,6 +16,12 @@
 .hero-logo-container{
   position: relative;
   top: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-logo-container:hover{
+  background-color: rgba(15, 76, 129, 1);
+
 }
 
 .hero-logo{
@@ -29,7 +35,7 @@
   height: 100%;
   width: 100%;
   box-shadow: 0 0 0 0 rgb(68, 68, 68);
-  animation: pulse 2s infinite ;
+  animation: pulse 1.5s infinite ease-in-out ;
 }
 
 .hero-icon-div{
