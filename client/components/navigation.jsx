@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 
-const Navigation = props => {
+function Navigation(props) {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -107,6 +107,6 @@ const Navigation = props => {
     </Navbar>
 
   );
-};
+}
 
 export default Navigation;
