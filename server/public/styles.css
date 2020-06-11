@@ -18,7 +18,13 @@
   background-color: rgba(20, 29, 57, 0.699);
   height: 50%;
   width: 100%;
+  transition: all 0.5s ease-in-out;
 }
+
+.hero-icon-row:hover{
+    background-color: rgba(58, 58, 58, 0.699);
+}
+
 
 .hero-icon-row:hover .hero-logo-container{
   background-color: rgba(15, 76, 129, 1);

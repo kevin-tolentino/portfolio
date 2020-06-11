@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
+import { Link } from 'react-scroll';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 
 const Navigation = props => {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
-  const offset = (window.innerWidth <= 575 ? -280 : -63);
+  const offset = (window.innerWidth <= 575 ? -84 : -68);
   const delay = 0;
   const duration = 1000;
 
   return (
 
-    <Navbar className="sticky-top navigation-background"
+    <Navbar className="fixed-top navigation-background"
       color="dark"
       dark
       expand="sm">
@@ -25,8 +25,7 @@ const Navigation = props => {
         smooth='easeInOutQuint'
         delay={delay}
         duration={duration}
-        offset={offset}
-        onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
+        offset={offset}>
         <img className="logo" src="/images/logo-white.png" alt="logo-white" />
       </Link>
 
@@ -42,7 +41,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={delay}
               duration={duration}
-              offset={offset}
+              offset={(window.innerWidth <= 575 ? -80 : -1)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
                 About Me
             </Link>
@@ -56,7 +55,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={delay}
               duration={duration}
-              offset={(window.innerWidth <= 575 ? -280 : -63)}
+              offset={offset}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Technical Skills
             </Link>
@@ -70,7 +69,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={delay}
               duration={duration}
-              offset={(window.innerWidth <= 575 ? -280 : -63)}
+              offset={offset}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Tools
             </Link>
@@ -84,7 +83,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={delay}
               duration={duration}
-              offset={(window.innerWidth <= 575 ? -280 : -63)}
+              offset={offset}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Applications
             </Link>
@@ -98,7 +97,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={delay}
               duration={duration}
-              offset={(window.innerWidth <= 575 ? -280 : -63)}
+              offset={offset}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Contact
             </Link>

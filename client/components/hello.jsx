@@ -5,7 +5,7 @@ class Hello extends React.Component {
   render() {
 
     return (
-      <div id="hero" className="text-white d-flex flex-column justify-content-center hero-component hero-image">
+      <div id="hero" className="text-white d-flex flex-column justify-content-center component hero-image">
         <div className="hero-icon-row">
           <div onClick={() => {
             scroller.scrollTo('about-me', {
