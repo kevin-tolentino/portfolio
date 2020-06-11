@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 
 function ApplicationListItem(props) {
   const techItems = [];
@@ -12,7 +13,9 @@ function ApplicationListItem(props) {
 
   return (
     <div className="app-card p-3 my-1 card col-md-3">
-      <img className="card-img-top app-img" src={props.demo} alt={props.name}/>
+      <LazyLoad height={'100%'} offset={100} once>
+        <img className="fade-in-opacity card-img-top app-img" src={props.demo} alt={props.name}/>
+      </LazyLoad>
       <div className="card-body d-flex flex-column">
         <div>
           <h5 className="card-title">{props.name}</h5>
@@ -33,7 +36,6 @@ function ApplicationListItem(props) {
         </div>
       </div>
     </div>
-
   );
 }
 
