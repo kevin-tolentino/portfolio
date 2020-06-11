@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 
 function AboutMe(props) {
   return (
@@ -6,7 +7,9 @@ function AboutMe(props) {
       <div className="row py-2 align-items-center">
         <div className="p-1 col-md-5 d-flex flex-column align-items-center justify-content-around">
           <div className="my-2 d-flex justify-content-center">
-            <img className="cutout" src="/images/profile-cutout-3.png" alt="Profile Cut Out"/>
+            <LazyLoad height={200}>
+              <img className="cutout fade-in-opacity" src="/images/profile-cutout-3.png" alt="Profile Cut Out"/>
+            </LazyLoad>
           </div>
           {/* consider adding tooltips via bootstrap for these icons */}
           <div className="about-me-icons-div my-2 d-flex justify-content-between">
