@@ -7,7 +7,7 @@ function AboutMe(props) {
       <div className="row py-2 align-items-center">
         <div className="p-1 col-md-5 d-flex flex-column align-items-center justify-content-around">
           <div className="my-2 d-flex justify-content-center">
-            <LazyLoad height={200}>
+            <LazyLoad height={'100%'} offset={100} once>
               <img className="cutout fade-in-opacity" src="/images/profile-cutout-3.png" alt="Profile Cut Out"/>
             </LazyLoad>
           </div>

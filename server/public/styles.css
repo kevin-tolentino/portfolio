@@ -172,10 +172,12 @@ a:hover{
 
 .fade-in-opacity{
  animation-name: fadeInOpacity;
- animation-duration: 1s;
+ animation-duration: .5s;
+ /* animation-delay: 1s; */
  animation-timing-function: ease-in-out;
  animation-iteration-count: 1;
  animation-direction: normal;
+ animation-fill-mode: both;
 }
 
 
