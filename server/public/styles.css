@@ -158,6 +158,26 @@ a:hover{
   text-decoration: none;
 }
 
+.not-visible{
+  visibility: visible;
+  opacity: 1;
+  transition: all .5s ease-in-out
+
+}
+
+.is-visible{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fade-in-all{
+ animation-name: fadeInAll;
+ animation-duration: .75s;
+ animation-timing-function: ease-in-out;
+ animation-iteration-count: 1;
+ animation-direction: normal;
+}
+
 @keyframes pulse{
   0% {
   transform: scale(0.95);
@@ -175,14 +195,33 @@ a:hover{
   }
 }
 
-.not-visible{
-  opacity: 1;
-  transition: opacity .5s ease-in-out
+@keyframes fadeIn{
+  0% {
+ visibility: hidden;
+  }
+
+
+  100%{
+   visibility: visible;
+  }
 }
 
-.is-visible{
+@keyframes fadeInAll{
+  0% {
+ opacity: 0;
+  }
+
+80% {
   opacity: 0;
 }
+
+  100%{
+   opacity: 1;
+  }
+}
+
+
+
 
 
 @media screen

@@ -13,7 +13,7 @@ const Navigation = props => {
 
   return (
 
-    <Navbar className="fixed-top navigation-background"
+    <Navbar className="fixed-top"
       color="dark"
       dark
       expand="sm">
