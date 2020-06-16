@@ -1,6 +1,5 @@
 .cutout{
-  width: 75vw;
-  max-width: 50vh;
+  width: 500px;
   object-fit: contain;
 }
 
@@ -65,9 +64,7 @@ font-weight: lighter;
   background-size: cover;
 }
 
-.contact-logo{
-  width: 50%;
-}
+
 
 .about-me-icons-div{
   width: 80%;
@@ -139,9 +136,9 @@ footer{
 }
 
 .contact-logo{
-  width: 25vw;
-  max-width: 35vh;
+  width: 300px;
 }
+
 
 .tech-item span{
   font-size: small;
@@ -249,12 +246,17 @@ a:hover{
 @media screen
   and (max-width: 768px)
  {
+  .cutout{
+  width: 300px;
+  object-fit: contain;
+}
+
    .dev-icon{
      min-width: 150px;
      width: 150px;
      height: 150px
    }
    .contact-logo{
-  min-width: 50vw;
+  width: 200px;
 }
 }
