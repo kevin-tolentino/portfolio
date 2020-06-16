@@ -114,6 +114,10 @@ i:hover{
   margin-right: 20px;
 }
 
+.card-footer-height{
+  height: 175px;
+}
+
 footer{
   min-height: 99vh;
 }

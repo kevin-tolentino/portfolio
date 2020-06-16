@@ -27,7 +27,8 @@ const applicationList = [
     demo: '/images/app-images/peace-covid-demo-square.gif',
     gitHub: 'https://github.com/kevin-tolentino/peace-covid19-tracker',
     live: 'https://peace-covid19-tracker.kevintolentino.com/'
-  }];
+  }
+];
 
 function Applications(props) {
   return (

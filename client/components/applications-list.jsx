@@ -17,12 +17,12 @@ function ApplicationListItem(props) {
         <img className="fade-in-opacity card-img-top app-img" src={props.demo} alt={props.name}/>
       </LazyLoad>
       <div className="card-body d-flex flex-column">
-        <h5 className="card-title">{props.name}</h5>
-        <p className="card-text">{props.desc}</p>
+        <h5 className="card-title text-center">{props.name}</h5>
+        <p className="card-text text-center">{props.desc}</p>
         <div className="d-flex justify-content-center">
         </div>
       </div>
-      <div className="card-footer h-30">
+      <div className="card-footer card-footer-height">
         <div className='d-flex justify-content-center flex-column'>
           <div className='d-flex justify-content-center'>
             <a className="m-1 btn btn-outline-secondary" href={props.gitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -55,25 +55,25 @@ function ApplicationList(props) {
             gitHub={currentApp.gitHub}
             live={currentApp.live}
             tech={currentApp.tech}/>
-
         );
       })}
-      {/* implement after mvp */}
-      {/* <div className="p-3 my-1 mx-1 card col-md-3">
-        <h1 className="card-img-top app-img" src={props.demo} alt={props.name}>Coming Soon</h1>
+      <div className="app-card p-3 my-1 card col-md-3">
+        <LazyLoad height={'100%'} offset={100} once>
+          <img className="fade-in-opacity card-img-top app-img" src="/images/app-images/coming-soon.jpg" alt="Coming Soon Picture" />
+        </LazyLoad>
         <div className="card-body d-flex flex-column">
-          <div>
-            <h5 className="card-title">Coming Soon</h5>
-            <p className="card-text">{props.desc}</p>
-          </div>
+          <h5 className="card-title text-center">Coming Soon!</h5>
+          <p className="card-text"></p>
           <div className="d-flex justify-content-center">
-            <a disabled className="m-1 btn btn-primary" href={props.gitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a disabled className="m-1 btn btn-secondary" href={props.live} target="_blank" rel="noopener noreferrer">Live</a>
           </div>
         </div>
-        <div className="card-footer">
+        <div className="card-footer card-footer-height">
+          <div className='d-flex justify-content-center flex-column'>
+            <div className='d-flex justify-content-center'>
+            </div>
+          </div>
         </div>
-      </div> */}
+      </div>
     </div>
 
   );
