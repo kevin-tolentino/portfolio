@@ -25,15 +25,20 @@ function ApplicationListItem(props) {
       <div className="card-footer card-footer-height">
         <div className='d-flex justify-content-center flex-column'>
           <div className='d-flex justify-content-center'>
-            <a className="m-1 btn btn-outline-secondary" href={props.gitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a className="m-1 btn btn-outline-success" href={props.live} target="_blank" rel="noopener noreferrer">Live</a>
+            <a className="m-1 btn btn-outline-secondary" href={props.gitHub} target="_blank" rel="noopener noreferrer"><i className="mx-1 fab fa-github"></i>GitHub</a>
+            <a className="m-1 btn btn-outline-success" href={props.live} target="_blank" rel="noopener noreferrer"><i className="mx-1 fas fa-tv"></i>Live</a>
           </div>
           <div>
-            <div className="tech-item text-center"><em>developed with</em> <br/>{techItems.map(currentItem => {
-              return (
-                <span key={currentItem}>{currentItem}</span>
-              );
-            })}
+            <div className="tech-item text-center"><em>developed with</em> <br/>
+              <div >
+                {techItems.map(currentItem => {
+                  return (
+                    <div className="tech-item-div" key={currentItem}>
+                      <span >{currentItem}</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

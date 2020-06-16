@@ -21,15 +21,24 @@ function Contact(props) {
         </div>
       </div>
       <div className="row justify-content-center">
-        <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="https://github.com/kevin-tolentino" target="_blank" rel="noopener noreferrer">
-          <i className="mx-1 fab fa-github"></i>
-        </a>
-        <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="https://www.linkedin.com/in/kevinstolentino/" target="_blank" rel="noopener noreferrer">
-          <i className="mx-1 fab fa-linkedin"></i>
-        </a>
-        <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="/images/Kevin_Tolentino_Resume.pdf" download>
-          <i className="mx-1 fas fa-file-alt"></i>
-        </a>
+        <div>
+          <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="https://github.com/kevin-tolentino" target="_blank" rel="noopener noreferrer">
+            <i className="mx-1 fab fa-github"></i>
+          </a>
+          <p className="text-center contact-icon-text">Github</p>
+        </div>
+        <div>
+          <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="https://www.linkedin.com/in/kevinstolentino/" target="_blank" rel="noopener noreferrer">
+            <i className="mx-1 fab fa-linkedin"></i>
+          </a>
+          <p className="text-center contact-icon-text">LinkedIn</p>
+        </div>
+        <div>
+          <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="/images/Kevin_Tolentino_Resume.pdf" download>
+            <i className="mx-1 fas fa-file-alt"></i>
+          </a>
+          <p className="text-center contact-icon-text">Resume</p>
+        </div>
       </div>
     </footer>
   );

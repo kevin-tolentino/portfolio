@@ -114,6 +114,17 @@ i:hover{
   opacity: 1;
 }
 
+.contact-icon-text{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out
+}
+
+.contact-icon-styling:hover + p.contact-icon-text{
+  visibility: visible;
+  opacity: 1;
+}
+
 .icon-sizing{
   width: 20px;
   height: 20px;
@@ -165,10 +176,16 @@ footer{
 
 
 .tech-item span{
-  font-size: small;
-  background-color: cadetblue;
-  margin-left: 2px;
-  margin-right: 2px;
+  display: inline-block;
+  font-size: 1em;
+  color: black
+}
+
+.tech-item-div{
+  /* background-color: rgb(48, 143, 226); */
+  display: inline-block;
+  margin: 2px;
+
 }
 
 .cursor-pointer{
@@ -270,7 +287,7 @@ a:hover{
 @media screen
   and (max-width: 768px)
  {
-  .about-me-icon-text{
+  .about-me-icon-text, .contact-icon-text{
     display: none;
   }
 
