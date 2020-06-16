@@ -8,7 +8,7 @@ const applicationList = [
     name: 'Itinize',
     desc: 'Itinize is a full-stack web application for travelers who want to organize their travel plans.',
     tech: ['React.js', 'React Router', 'Node.js', 'Express', 'PostgreSQL'],
-    demo: '/images/app-images/itinize-demo.gif',
+    demo: '/images/app-images/itinize-demo-square-cut.gif',
     gitHub: 'https://github.com/helen-choi/itinize',
     live: 'https://itinize.kevintolentino.com/'
   },
@@ -16,7 +16,7 @@ const applicationList = [
     name: 'Succulent Sales',
     desc: 'A full stack Node.js and React shopping cart app for succulent products.',
     tech: ['React.js', 'Webpack', 'Node.js', 'Express', 'Bootstrap 4', 'PostgreSQL'],
-    demo: '/images/app-images/succulent-demo.gif',
+    demo: '/images/app-images/succulent-sales-square-demo.gif',
     gitHub: 'https://github.com/kevin-tolentino/succulent-sales-js',
     live: 'https://succulent-sales.kevintolentino.com/'
   },
@@ -24,7 +24,7 @@ const applicationList = [
     name: 'Peace COVID-19 Tracker',
     desc: 'A web application that displays recent COVID-19 case data and daily Bible Verses API data.',
     tech: ['jQuery (AJAX)', 'JavaScript', 'CSS3', 'HTML5', 'Bootstrap 4'],
-    demo: '/images/app-images/peace-covid19-demo.gif',
+    demo: '/images/app-images/peace-covid-demo-square.gif',
     gitHub: 'https://github.com/kevin-tolentino/peace-covid19-tracker',
     live: 'https://peace-covid19-tracker.kevintolentino.com/'
   }];

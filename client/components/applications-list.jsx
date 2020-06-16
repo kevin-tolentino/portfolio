@@ -17,22 +17,25 @@ function ApplicationListItem(props) {
         <img className="fade-in-opacity card-img-top app-img" src={props.demo} alt={props.name}/>
       </LazyLoad>
       <div className="card-body d-flex flex-column">
-        <div>
-          <h5 className="card-title">{props.name}</h5>
-          <p className="card-text">{props.desc}</p>
+        <h5 className="card-title">{props.name}</h5>
+        <p className="card-text">{props.desc}</p>
+        <div className="d-flex justify-content-center">
+        </div>
+      </div>
+      <div className="card-footer h-30">
+        <div className='d-flex justify-content-center flex-column'>
+          <div className='d-flex justify-content-center'>
+            <a className="m-1 btn btn-outline-secondary" href={props.gitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a className="m-1 btn btn-outline-success" href={props.live} target="_blank" rel="noopener noreferrer">Live</a>
+          </div>
           <div>
-            <p className="text-center"><em>developed with</em></p>
-            <div className="tech-item text-center">{techItems.map(currentItem => {
+            <div className="tech-item text-center"><em>developed with</em> <br/>{techItems.map(currentItem => {
               return (
                 <span key={currentItem}>{currentItem}</span>
               );
-            })}</div></div>
-        </div>
-      </div>
-      <div className="card-footer">
-        <div className="d-flex justify-content-center">
-          <a className="m-1 btn btn-outline-secondary" href={props.gitHub} target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a className="m-1 btn btn-outline-success" href={props.live} target="_blank" rel="noopener noreferrer">Live</a>
+            })}
+            </div>
+          </div>
         </div>
       </div>
     </div>
