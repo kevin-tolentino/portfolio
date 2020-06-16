@@ -67,7 +67,7 @@ font-weight: lighter;
 
 
 .about-me-icons-div{
-  width: 80%;
+  width: 100%;
 }
 
 .about-me-p{
@@ -101,6 +101,22 @@ i {
 
 i:hover{
   text-decoration: none;
+}
+
+.about-me-icon-text{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out
+}
+
+.about-icon-styling:hover + p.about-me-icon-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon-sizing{
+  width: 20px;
+  height: 20px;
 }
 
 .dev-icon-div{
@@ -254,6 +270,10 @@ a:hover{
 @media screen
   and (max-width: 768px)
  {
+  .about-me-icon-text{
+    display: none;
+  }
+
    .about-me-p{
   font-size: 1em;
 }
@@ -263,9 +283,9 @@ a:hover{
 }
 
    .dev-icon{
-     min-width: 150px;
-     width: 150px;
-     height: 150px
+     min-width: 125pz;
+     width: 125pz;
+     height: 125pz
    }
    .contact-logo{
   width: 200px;

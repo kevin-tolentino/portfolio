@@ -5,7 +5,8 @@ function Contact(props) {
     <footer id="contact" className="container-fluid pb-4 bg-white d-flex flex-column justify-content-center">
       <div className="row my-4">
         <div className="col d-flex justify-content-center">
-          <img className="contact-logo" src="/images/logo-name-black.png" alt="White logo contact"/>
+          <h2>Let&apos;s Talk!</h2>
+          {/* <img className="contact-logo" src="/images/logo-name-black.png" alt="White logo contact"/> */}
         </div>
       </div>
       <div className="row my-4 justify-content-center">

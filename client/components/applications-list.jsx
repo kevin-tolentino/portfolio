@@ -12,9 +12,9 @@ function ApplicationListItem(props) {
   }
 
   return (
-    <div className="app-card p-3 my-1 card col-md-3">
+    <div className="app-card p-1 my-1 card col-md-3">
       <LazyLoad height={'100%'} offset={100} once>
-        <img className="fade-in-opacity card-img-top app-img" src={props.demo} alt={props.name}/>
+        <a href={props.live} target="_blank" rel="noopener noreferrer"><img className="fade-in-opacity card-img-top app-img" src={props.demo} alt={props.name}/></a>
       </LazyLoad>
       <div className="card-body d-flex flex-column">
         <h5 className="card-title text-center">{props.name}</h5>
@@ -44,7 +44,7 @@ function ApplicationListItem(props) {
 
 function ApplicationList(props) {
   return (
-    <div className="p-4 row flex-wrap justify-content-around text-dark">
+    <div className="p-4 row flex-wrap justify-content-between text-dark">
       {props.applicationList.map(currentApp => {
         return (
 
@@ -57,7 +57,7 @@ function ApplicationList(props) {
             tech={currentApp.tech}/>
         );
       })}
-      <div className="app-card p-3 my-1 card col-md-3">
+      <div className="app-card p-1 my-1 card col-md-3">
         <LazyLoad height={'100%'} offset={100} once>
           <img className="fade-in-opacity card-img-top app-img" src="/images/app-images/coming-soon.jpg" alt="Coming Soon Picture" />
         </LazyLoad>
