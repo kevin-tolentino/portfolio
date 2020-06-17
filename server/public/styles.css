@@ -103,26 +103,18 @@ i:hover{
   text-decoration: none;
 }
 
-.about-me-icon-text{
+.about-me-icon-text, .contact-icon-text{
   visibility: hidden;
   opacity: 0;
-  transition: all .5s ease-in-out
+  transition: all .5s ease-in-out;
+  color: rgb(0, 0, 0);
 }
 
-.about-icon-styling:hover + p.about-me-icon-text{
-  visibility: visible;
-  opacity: 1;
-}
-
-.contact-icon-text{
-  visibility: hidden;
-  opacity: 0;
-  transition: all .5s ease-in-out
-}
-
+.about-icon-styling:hover + p.about-me-icon-text,
 .contact-icon-styling:hover + p.contact-icon-text{
   visibility: visible;
   opacity: 1;
+  color: rgb(0, 0, 0);
 }
 
 .icon-sizing{
@@ -135,9 +127,9 @@ i:hover{
 }
 
 .dev-icon{
-  min-width: 100px;
-  width: 100px;
-  height: 100px;
+  min-width: 125px;
+  width: 125px;
+  height: 125px;
 }
 
 .app-card{
@@ -182,10 +174,12 @@ footer{
 }
 
 .tech-item-div{
-  /* background-color: rgb(48, 143, 226); */
   display: inline-block;
   margin: 2px;
+}
 
+.contact-scroll-to-top:hover {
+  color: gray;
 }
 
 .cursor-pointer{
@@ -300,9 +294,9 @@ a:hover{
 }
 
    .dev-icon{
-     min-width: 125pz;
-     width: 125pz;
-     height: 125pz
+     min-width: 125px;
+     width: 125px;
+     height: 125px;
    }
    .contact-logo{
   width: 200px;
