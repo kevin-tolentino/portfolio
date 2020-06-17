@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 
 function Contact(props) {
   return (
@@ -39,6 +40,15 @@ function Contact(props) {
           </a>
           <p className="text-center contact-icon-text">Resume</p>
         </div>
+      </div>
+      <div className="mt-3"><p className="contact-scroll-to-top text-center cursor-pointer" onClick={() => {
+        scroll.scrollToTop({
+          duration: 800,
+          smooth: 'easeInOutQuart'
+        });
+      }}>Click to go to top!</p></div>
+      <div className="mt-5">
+        <p className="text-center">© Kevin Tolentino 2020</p>
       </div>
     </footer>
   );
