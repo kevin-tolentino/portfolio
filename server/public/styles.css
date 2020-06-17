@@ -45,6 +45,33 @@
   width: 300px;
 }
 
+.hero-component{
+  position: relative;
+}
+
+.name-title-row {
+    position: absolute;
+    margin-right: 3em;
+    right: 0;
+    bottom: 0;
+}
+
+#hero p {
+  text-align: end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#hero p.name{
+  font-size: 5em;
+  font-weight: lighter;
+}
+
+#hero p.title{
+  font-size: 4em;
+  font-weight: lighter;
+}
+
 .hero-logo-div-sibling{
   position: absolute;
   top: 0;
@@ -281,6 +308,22 @@ a:hover{
 @media screen
   and (max-width: 768px)
  {
+#hero p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#hero p.name{
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+#hero p.title{
+  font-size: 2em;
+  font-weight: lighter;
+}
+
   .about-me-icon-text, .contact-icon-text{
     display: none;
   }
