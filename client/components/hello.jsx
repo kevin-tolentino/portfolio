@@ -9,7 +9,7 @@ class Hello extends React.Component {
         <div className="hero-icon-row">
           <div onClick={() => {
             scroller.scrollTo('about-me', {
-              offset: (window.innerWidth <= 575 ? -80 : -1),
+              offset: (window.innerWidth <= 575 ? -80 : -50),
               duration: 800,
               delay: 0,
               smooth: 'easeInOutQuart'
