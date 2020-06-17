@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 
-const Navigation = props => {
+function Navigation(props) {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -41,7 +41,7 @@ const Navigation = props => {
               smooth='easeInOutQuint'
               delay={delay}
               duration={duration}
-              offset={(window.innerWidth <= 575 ? -80 : -1)}
+              offset={(window.innerWidth <= 575 ? -80 : -50)}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
                 About Me
             </Link>
@@ -107,6 +107,6 @@ const Navigation = props => {
     </Navbar>
 
   );
-};
+}
 
 export default Navigation;
