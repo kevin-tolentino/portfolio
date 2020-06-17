@@ -1,5 +1,5 @@
 .cutout{
-  width: 500px;
+  width: 400px;
   object-fit: contain;
 }
 
@@ -51,9 +51,10 @@
 
 .name-title-row {
     position: absolute;
-    margin-right: 3em;
+    margin-right: 1em;
     right: 0;
     bottom: 0;
+    background-color: rgb(0, 0, 0);
 }
 
 #hero p {
@@ -308,6 +309,15 @@ a:hover{
 @media screen
   and (max-width: 768px)
  {
+.name-title-row {
+    position: absolute;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+}
+
 #hero p {
   text-align: center;
   margin-top: 0;
