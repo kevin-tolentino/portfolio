@@ -64,12 +64,12 @@
 }
 
 #hero p.name{
-  font-size: 5em;
+  font-size: 4em;
   font-weight: lighter;
 }
 
 #hero p.title{
-  font-size: 4em;
+  font-size: 2em;
   font-weight: lighter;
 }
 
