@@ -12,32 +12,34 @@ function ApplicationListItem(props) {
   }
 
   return (
-    <div className="app-card p-1 my-1 card col-md-3">
-      <LazyLoad height={'100%'} offset={100} once>
-        <a href={props.live} target="_blank" rel="noopener noreferrer"><img className="fade-in-opacity card-img-top app-img" src={props.demo} alt={props.name}/></a>
-      </LazyLoad>
-      <div className="card-body d-flex flex-column">
-        <h5 className="card-title text-center">{props.name}</h5>
-        <p className="card-text text-center">{props.desc}</p>
-        <div className="d-flex justify-content-center">
-        </div>
-      </div>
-      <div className="card-footer card-footer-height">
-        <div className='d-flex justify-content-center flex-column'>
-          <div className='d-flex justify-content-center'>
-            <a className="m-1 btn btn-outline-secondary" href={props.gitHub} target="_blank" rel="noopener noreferrer"><i className="mx-1 fab fa-github"></i>GitHub</a>
-            <a className="m-1 btn btn-outline-success" href={props.live} target="_blank" rel="noopener noreferrer"><i className="mx-1 fas fa-tv"></i>Live</a>
+    <div className="col-12 col-md-6 col-lg-4">
+      <div className="p-1 my-1 card ">
+        <div className="card-body d-flex flex-column">
+          <LazyLoad height={'100%'} offset={100} once>
+            <a href={props.live} target="_blank" rel="noopener noreferrer"><img className="fade-in-opacity card-img-top" src={props.demo} alt={props.name}/></a>
+          </LazyLoad>
+          <h5 className="card-title text-center">{props.name}</h5>
+          <p className="card-text text-center">{props.desc}</p>
+          <div className="d-flex justify-content-center">
           </div>
-          <div>
-            <div className="tech-item text-center"><em>developed with</em> <br/>
-              <div >
-                {techItems.map(currentItem => {
-                  return (
-                    <div className="tech-item-div" key={currentItem}>
-                      <span >{currentItem}</span>
-                    </div>
-                  );
-                })}
+        </div>
+        <div className="card-footer-height">
+          <div className='d-flex justify-content-center flex-column'>
+            <div className='d-flex justify-content-center'>
+              <a className="m-1 btn btn-outline-secondary" href={props.gitHub} target="_blank" rel="noopener noreferrer"><i className="mx-1 fab fa-github"></i>GitHub</a>
+              <a className="m-1 btn btn-outline-success" href={props.live} target="_blank" rel="noopener noreferrer"><i className="mx-1 fas fa-tv"></i>Live</a>
+            </div>
+            <div>
+              <div className="tech-item text-center"><h6>developed with</h6>
+                <div>
+                  {techItems.map(currentItem => {
+                    return (
+                      <div className="tech-item-div" key={currentItem}>
+                        <span className="badge badge-pill badge-secondary">{currentItem}</span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
@@ -62,19 +64,21 @@ function ApplicationList(props) {
             tech={currentApp.tech}/>
         );
       })}
-      <div className="app-card p-1 my-1 card col-md-3">
-        <LazyLoad height={'100%'} offset={100} once>
-          <img className="fade-in-opacity card-img-top app-img" src="/images/app-images/coming-soon.jpg" alt="Coming Soon Picture" />
-        </LazyLoad>
-        <div className="card-body d-flex flex-column">
-          <h5 className="card-title text-center">Coming Soon!</h5>
-          <p className="card-text"></p>
-          <div className="d-flex justify-content-center">
+      <div className="col-12 col-md-6 col-lg-4">
+        <div className="app-card p-1 my-1 card">
+          <div className="card-body d-flex flex-column">
+            <LazyLoad height={'100%'} offset={100} once>
+              <img className="fade-in-opacity card-img-top" src="/images/app-images/coming-soon.jpg" alt="Coming Soon Picture" />
+            </LazyLoad>
+            <h5 className="card-title text-center">Coming Soon!</h5>
+            <p className="card-text"></p>
+            <div className="d-flex justify-content-center">
+            </div>
           </div>
-        </div>
-        <div className="card-footer card-footer-height">
-          <div className='d-flex justify-content-center flex-column'>
-            <div className='d-flex justify-content-center'>
+          <div className="card-footer card-footer-height">
+            <div className='d-flex justify-content-center flex-column'>
+              <div className='d-flex justify-content-center'>
+              </div>
             </div>
           </div>
         </div>
