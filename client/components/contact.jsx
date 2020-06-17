@@ -6,7 +6,7 @@ function Contact(props) {
     <footer id="contact" className="container-fluid pb-4 bg-white d-flex flex-column justify-content-center">
       <div className="row my-4">
         <div className="col d-flex justify-content-center">
-          <h2>Let&apos;s Talk!</h2>
+          <h2 className="text-center">I look forward to talking with you!</h2>
           {/* <img className="contact-logo" src="/images/logo-name-black.png" alt="White logo contact"/> */}
         </div>
       </div>
@@ -35,7 +35,7 @@ function Contact(props) {
           <p className="text-center contact-icon-text">LinkedIn</p>
         </div>
         <div>
-          <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="/images/Kevin_Tolentino_Resume.pdf" download>
+          <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="/images/Kevin_Tolentino_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <i className="mx-1 fas fa-file-alt"></i>
           </a>
           <p className="text-center contact-icon-text">Resume</p>

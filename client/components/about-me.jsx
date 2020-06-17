@@ -37,7 +37,7 @@ function AboutMe(props) {
               <p className="text-center about-me-icon-text">Email</p>
             </div>
             <div>
-              <a className="about-icon-styling d-flex justify-content-center align-items-center" href="/images/Kevin_Tolentino_Resume.pdf" download>
+              <a className="about-icon-styling d-flex justify-content-center align-items-center" href="/images/Kevin_Tolentino_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <i className="mx-1 fas fa-file-alt "></i>
               </a>
               <p className="text-center about-me-icon-text">Resume</p>
