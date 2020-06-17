@@ -5,7 +5,7 @@ function SkillsListItem(props) {
   return (
     <div className="fade-in-opacity col-6 col-md-4">
       <div className="d-flex justify-content-center dev-icon-div">
-        <LazyLoad height={'100%'} offset={100} once>
+        <LazyLoad height={'100%'} offset={300} once>
           <img className="dev-icon" src={props.image.path} alt={props.image.name}/>
         </LazyLoad>
 

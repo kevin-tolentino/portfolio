@@ -14,7 +14,7 @@ const applicationList = [
   },
   {
     name: 'Succulent Sales',
-    desc: 'Succulent Sales is a full stack Node.js and React shopping cart app for succulent products.',
+    desc: 'Succulent Sales is a full stack Node.js and React shopping cart app that features succulent products.',
     tech: ['React.js', 'Webpack', 'Node.js', 'Express', 'Bootstrap 4', 'PostgreSQL'],
     demo: '/images/app-images/succulent-sales-square-demo.gif',
     gitHub: 'https://github.com/kevin-tolentino/succulent-sales-js',
@@ -32,7 +32,7 @@ const applicationList = [
 
 function Applications(props) {
   return (
-    <div className={props.secondaryBackground}>
+    <div className={props.background}>
       <div id="applications"className="pb-4 container text-white component">
         <div className="row ">
           <div className="p-3 col">

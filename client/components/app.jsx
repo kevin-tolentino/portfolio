@@ -10,16 +10,19 @@ import Hello from './hello';
 export default class App extends React.Component {
 
   render() {
+    const firstBackground = 'bg-white';
+    const secondaryBackground = 'bg-dark';
+
     return (
       <>
         <div className="fade-in-all">
           <Navigation />
           <Hello/>
-          <AboutMe />
-          <Skills />
-          <Tools />
-          <Applications />
-          <Contact />
+          <AboutMe background={firstBackground}/>
+          <Skills background={secondaryBackground}/>
+          <Tools background={firstBackground}/>
+          <Applications background={secondaryBackground}/>
+          <Contact background={firstBackground}/>
         </div>
       </>
     );

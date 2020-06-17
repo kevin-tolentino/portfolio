@@ -6,7 +6,6 @@ class Hello extends React.Component {
 
     return (
       <div id="hero" className="hero-component text-white d-flex flex-column justify-content-center component hero-image">
-
         <div className="hero-icon-row">
           <div onClick={() => {
             scroller.scrollTo('about-me', {

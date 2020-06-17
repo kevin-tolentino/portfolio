@@ -41,13 +41,15 @@ const toolsImages = [{
 
 function Tools(props) {
   return (
-    <div id="tools" className="pb-4 container-xl component ">
-      <div className="row">
-        <div className="p-3 col">
-          <h2>Tools</h2>
+    <div className={props.background}>
+      <div id="tools" className="pb-4 container component ">
+        <div className="row">
+          <div className="p-3 col">
+            <h2>Tools</h2>
+          </div>
         </div>
+        <ToolsList devIcon={toolsImages} />
       </div>
-      <ToolsList devIcon={toolsImages} />
     </div>
   );
 }

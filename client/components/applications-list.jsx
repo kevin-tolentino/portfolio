@@ -15,15 +15,15 @@ function ApplicationListItem(props) {
     <div className="col-12 col-md-6 col-lg-4">
       <div className="p-1 my-1 card ">
         <div className="card-body d-flex flex-column">
-          <LazyLoad height={'100%'} offset={100} once>
+          <LazyLoad height={'100%'} offset={300} once>
             <a href={props.live} target="_blank" rel="noopener noreferrer"><img className="fade-in-opacity card-img-top" src={props.demo} alt={props.name}/></a>
           </LazyLoad>
-          <h5 className="card-title text-center">{props.name}</h5>
+          <h5 className="mt-4 card-title text-center">{props.name}</h5>
           <p className="card-text text-center">{props.desc}</p>
           <div className="d-flex justify-content-center">
           </div>
         </div>
-        <div className="card-footer-height">
+        <div className="card-footer card-footer-height">
           <div className='d-flex justify-content-center flex-column'>
             <div className='d-flex justify-content-center'>
               <a className="m-1 btn btn-outline-secondary" href={props.gitHub} target="_blank" rel="noopener noreferrer"><i className="mx-1 fab fa-github"></i>GitHub</a>
@@ -70,8 +70,8 @@ function ApplicationList(props) {
             <LazyLoad height={'100%'} offset={100} once>
               <img className="fade-in-opacity card-img-top" src="/images/app-images/coming-soon.jpg" alt="Coming Soon Picture" />
             </LazyLoad>
-            <h5 className="card-title text-center">Coming Soon!</h5>
-            <p className="card-text"></p>
+            <h5 className="mt-4 card-title text-center">Coming Soon!</h5>
+            <p className="card-text text-center">Check back another time!</p>
             <div className="d-flex justify-content-center">
             </div>
           </div>
