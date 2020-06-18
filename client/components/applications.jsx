@@ -14,7 +14,7 @@ const applicationList = [
   },
   {
     name: 'Succulent Sales',
-    desc: 'A full stack Node.js and React shopping cart app for succulent products.',
+    desc: 'Succulent Sales is a full stack Node.js and React shopping cart app that features succulent products.',
     tech: ['React.js', 'Webpack', 'Node.js', 'Express', 'Bootstrap 4', 'PostgreSQL'],
     demo: '/images/app-images/succulent-sales-square-demo.gif',
     gitHub: 'https://github.com/kevin-tolentino/succulent-sales-js',
@@ -22,7 +22,7 @@ const applicationList = [
   },
   {
     name: 'Peace COVID-19 Tracker',
-    desc: 'A web application that displays recent COVID-19 case data and daily Bible Verses API data.',
+    desc: 'Peace COVID-19 Tracker is a front end web application that displays recent COVID-19 & Bible Verses API data.',
     tech: ['jQuery (AJAX)', 'JavaScript', 'CSS3', 'HTML5', 'Bootstrap 4'],
     demo: '/images/app-images/peace-covid-demo-square.gif',
     gitHub: 'https://github.com/kevin-tolentino/peace-covid19-tracker',
@@ -32,19 +32,20 @@ const applicationList = [
 
 function Applications(props) {
   return (
-
-    <div id="applications"className="pb-4 container-xl bg-dark text-white component">
-      <div className="row ">
-        <div className="p-3 col">
-          <h2>Applications</h2>
+    <div className={props.background}>
+      <div id="applications"className="pb-4 container text-white component">
+        <div className="row ">
+          <div className="p-3 col">
+            <h2>Applications</h2>
+          </div>
         </div>
-      </div>
-      <ApplicationList applicationList={applicationList}/>
-      <div className="row">
-        <div className="col d-flex justify-content-center bg-secondary">
-          <GitHubCalendar username="kevin-tolentino" blockSize={13} fullYear={false}>
-            <ReactTooltip delayShow={50} html />
-          </GitHubCalendar>
+        <ApplicationList applicationList={applicationList}/>
+        <div className="row">
+          <div className="col d-flex justify-content-center bg-secondary">
+            <GitHubCalendar username="kevin-tolentino" blockSize={13} fullYear={false}>
+              <ReactTooltip delayShow={50} html />
+            </GitHubCalendar>
+          </div>
         </div>
       </div>
     </div>

@@ -37,13 +37,15 @@ const skillsImages = [{
 
 function Skills(props) {
   return (
-    <div id='skills' className="pb-4 container-xl bg-dark text-white component">
-      <div className="row">
-        <div className="p-3 col">
-          <h2>Technical Skills</h2>
+    <div className={props.background}>
+      <div id='skills' className="pb-4 container-xl bg-dark text-white component">
+        <div className="row">
+          <div className="p-3 col">
+            <h2>Technical Skills</h2>
+          </div>
         </div>
+        <SkillsList devIcon={skillsImages} />
       </div>
-      <SkillsList devIcon={skillsImages} />
     </div>
   );
 }

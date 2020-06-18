@@ -1,5 +1,5 @@
 .cutout{
-  width: 500px;
+  width: 400px;
   object-fit: contain;
 }
 
@@ -43,6 +43,34 @@
 .hero-logo{
   min-width: 300px;
   width: 300px;
+}
+
+.hero-component{
+  position: relative;
+}
+
+.name-title-row {
+    position: absolute;
+    margin-right: 1em;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+#hero p {
+  text-align: end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#hero p.name{
+  font-size: 4em;
+  font-weight: lighter;
+}
+
+#hero p.title{
+  font-size: 2em;
+  font-weight: lighter;
 }
 
 .hero-logo-div-sibling{
@@ -132,10 +160,10 @@ i:hover{
   height: 125px;
 }
 
-.app-card{
+/* .app-card{
   margin-left: 10px;
   margin-right: 10px;
-}
+} */
 
 .card-footer-height{
   height: 175px;
@@ -167,11 +195,11 @@ footer{
 }
 
 
-.tech-item span{
+/* .tech-item span{
   display: inline-block;
   font-size: 1em;
   color: black
-}
+} */
 
 .tech-item-div{
   display: inline-block;
@@ -281,6 +309,31 @@ a:hover{
 @media screen
   and (max-width: 768px)
  {
+.name-title-row {
+    position: absolute;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+#hero p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#hero p.name{
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+#hero p.title{
+  font-size: 2em;
+  font-weight: lighter;
+}
+
   .about-me-icon-text, .contact-icon-text{
     display: none;
   }
@@ -301,4 +354,9 @@ a:hover{
    .contact-logo{
   width: 200px;
 }
+}
+
+
+#applications{
+  background-color: #343a40;
 }
