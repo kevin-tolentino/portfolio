@@ -313,6 +313,7 @@ a:hover{
 .name-title-row {
     position: absolute;
     margin-right: 0;
+    margin-bottom: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -356,6 +357,32 @@ a:hover{
   width: 200px;
 }
 }
+
+@media screen
+  and (max-height: 400px)
+ {
+.name-title-row {
+   display: flex;
+   justify-content: center;
+}
+  #hero p.name{
+  font-size: 2em;
+  font-weight: lighter;
+   margin-right: 1em;
+}
+
+#hero p.title{
+  font-size: 2em;
+  font-weight: lighter;
+   margin-left: 1em;
+}
+
+.hero-logo{
+  min-width: 200px;
+  width: 200px;
+}
+
+ }
 
 
 #applications{
