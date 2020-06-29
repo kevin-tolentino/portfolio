@@ -7,7 +7,7 @@ const toolsImages = [
     path: '/images/tools/00-git-plain.svg'
   },
   {
-    name: 'Github',
+    name: 'GitHub',
     path: '/images/tools/01-github-original.svg'
   },
   {
