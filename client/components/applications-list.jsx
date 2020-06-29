@@ -64,25 +64,6 @@ function ApplicationList(props) {
             tech={currentApp.tech}/>
         );
       })}
-      <div className="col-12 col-md-6 col-lg-4">
-        <div className="app-card p-1 my-1 card">
-          <div className="card-body d-flex flex-column">
-            <LazyLoad height={'100%'} offset={100} once>
-              <img className="fade-in-opacity card-img-top" src="/images/app-images/coming-soon.jpg" alt="Coming Soon Picture" />
-            </LazyLoad>
-            <h5 className="mt-4 card-title text-center">Coming Soon!</h5>
-            <p className="card-text text-center">Check back another time!</p>
-            <div className="d-flex justify-content-center">
-            </div>
-          </div>
-          <div className="card-footer card-footer-height">
-            <div className='d-flex justify-content-center flex-column'>
-              <div className='d-flex justify-content-center'>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
   );
