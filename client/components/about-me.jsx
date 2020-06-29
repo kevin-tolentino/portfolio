@@ -17,7 +17,7 @@ function AboutMe(props) {
                 <a className="about-icon-styling d-flex justify-content-center align-items-center" href="https://github.com/kevin-tolentino" target="_blank" rel="noopener noreferrer">
                   <i className="icon-hover mx-1 fab fa-github "></i>
                 </a>
-                <p className="text-center about-me-icon-text">Github</p>
+                <p className="text-center about-me-icon-text">GitHub</p>
               </div>
               <div>
                 <a className="about-icon-styling d-flex justify-content-center align-items-center" href="https://www.linkedin.com/in/kevinstolentino/" target="_blank" rel="noopener noreferrer">
@@ -48,7 +48,7 @@ function AboutMe(props) {
           <div className="p-3 col-md-7">
             <h2>About Me</h2>
             <p className='about-me-p'>Hi there! My name is Kevin Tolentino, and I&apos;m a Full-Stack Web Developer passionate about develop web applications that will serve other people&apos;s needs.</p>
-            <p className='about-me-p'>In order to learn coding, I went through an Accelerated Full Stack Web Development program at LearningFuze in Orange County. I am now well-versed in languages like React.js, JavaScript, Node.js, Express, and Relational Database Management Systems like PostgreSQL. I have also participated in Agile teams (with daily standups and Zoom/Slack Communication), maintained source control (Git/Github), and utilized project management tools (Figma, MeisterTask). Even with these skills obtained, I&apos;m not shy to learn more and widen my skillset!</p>
+            <p className='about-me-p'>In order to learn coding, I went through an Accelerated Full Stack Web Development program at LearningFuze in Orange County. I am now well-versed in languages like React.js, JavaScript, Node.js, Express, and Relational Database Management Systems like PostgreSQL. I have also participated in Agile teams (with daily standups and Zoom/Slack Communication), maintained source control (Git/GitHub), and utilized project management tools (Figma, MeisterTask). Even with these skills obtained, I&apos;m not shy to learn more and widen my skillset!</p>
             <p className='about-me-p'>Outside of coding, you&apos;ll find me watching a good anime or spending quality time with family and friends. I am your supporter, your helper, and your friend. I look forward to talking with you!</p>
           </div>
         </div>

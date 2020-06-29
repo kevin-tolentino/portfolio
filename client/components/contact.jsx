@@ -26,7 +26,7 @@ function Contact(props) {
             <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="https://github.com/kevin-tolentino" target="_blank" rel="noopener noreferrer">
               <i className="mx-1 fab fa-github"></i>
             </a>
-            <p className="text-center contact-icon-text">Github</p>
+            <p className="text-center contact-icon-text">GitHub</p>
           </div>
           <div>
             <a className="mx-2 d-flex justify-content-center align-items-center contact-icon-styling" href="https://www.linkedin.com/in/kevinstolentino/" target="_blank" rel="noopener noreferrer">
