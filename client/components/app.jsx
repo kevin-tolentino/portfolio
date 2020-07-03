@@ -19,9 +19,9 @@ export default class App extends React.Component {
           <Navigation />
           <Hello/>
           <AboutMe background={firstBackground}/>
+          <Applications background={secondaryBackground}/>
           <Skills background={secondaryBackground}/>
           <Tools background={firstBackground}/>
-          <Applications background={secondaryBackground}/>
           <Contact background={firstBackground}/>
         </div>
       </>

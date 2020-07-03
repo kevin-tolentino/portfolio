@@ -50,6 +50,20 @@ function Navigation(props) {
             <Link
               activeClass="text-light"
               className="text-secondary cursor-pointer"
+              to="applications"
+              spy={true}
+              smooth='easeInOutQuint'
+              delay={delay}
+              duration={duration}
+              offset={offset}
+              onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
+              Applications
+            </Link>
+          </NavItem>
+          <NavItem className='mx-2 my-2'>
+            <Link
+              activeClass="text-light"
+              className="text-secondary cursor-pointer"
               to="skills"
               spy={true}
               smooth='easeInOutQuint'
@@ -72,20 +86,6 @@ function Navigation(props) {
               offset={offset}
               onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
               Tools
-            </Link>
-          </NavItem>
-          <NavItem className='mx-2 my-2'>
-            <Link
-              activeClass="text-light"
-              className="text-secondary cursor-pointer"
-              to="applications"
-              spy={true}
-              smooth='easeInOutQuint'
-              delay={delay}
-              duration={duration}
-              offset={offset}
-              onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
-              Applications
             </Link>
           </NavItem>
           <NavItem className='mx-2 my-2'>
