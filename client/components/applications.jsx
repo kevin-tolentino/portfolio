@@ -27,6 +27,14 @@ const applicationList = [
     demo: '/images/app-images/peace-covid-demo-square.gif',
     gitHub: 'https://github.com/kevin-tolentino/peace-covid19-tracker',
     live: 'https://peace-covid19-tracker.kevintolentino.com/'
+  },
+  {
+    name: 'Poke-match',
+    desc: 'Poke-match is a Pokémon-themed memory match game with statistic tracking and card GIF images.',
+    tech: ['JavaScript', 'CSS3', 'HTML5'],
+    demo: '/images/app-images/poke-match-demo.gif',
+    gitHub: 'https://github.com/kevin-tolentino/poke-match',
+    live: 'https://memory-match.kevintolentino.com/'
   }
 ];
 
