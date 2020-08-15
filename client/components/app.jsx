@@ -6,6 +6,7 @@ import Tools from './tools';
 import Applications from './applications';
 import Contact from './contact';
 import Hello from './hello';
+import MediaSection from './media';
 
 export default class App extends React.Component {
 
@@ -21,7 +22,8 @@ export default class App extends React.Component {
           <AboutMe background={firstBackground}/>
           <Applications background={secondaryBackground}/>
           <Skills background={secondaryBackground}/>
-          <Tools background={firstBackground}/>
+          <Tools background={firstBackground} />
+          <MediaSection background={firstBackground} />
           <Contact background={firstBackground}/>
         </div>
       </>
