@@ -23,7 +23,7 @@ export default class App extends React.Component {
           <Applications background={secondaryBackground}/>
           <Skills background={secondaryBackground}/>
           <Tools background={firstBackground} />
-          <MediaSection background={firstBackground} />
+          <MediaSection background={secondaryBackground} />
           <Contact background={firstBackground}/>
         </div>
       </>
