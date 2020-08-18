@@ -12,7 +12,7 @@ class MediaSection extends React.Component {
             </div>
           </div>
           <div className="row">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2c-5Wc2EoLU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe className="px-3" width="560" height="315" src="https://www.youtube.com/embed/2c-5Wc2EoLU" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       </div>
