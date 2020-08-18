@@ -92,6 +92,20 @@ function Navigation(props) {
             <Link
               activeClass="text-light"
               className="text-secondary cursor-pointer"
+              to="media"
+              spy={true}
+              smooth='easeInOutQuint'
+              delay={delay}
+              duration={duration}
+              offset={offset}
+              onClick={window.innerWidth <= 575 ? toggleNavbar : null}>
+              Media
+            </Link>
+          </NavItem>
+          <NavItem className='mx-2 my-2'>
+            <Link
+              activeClass="text-light"
+              className="text-secondary cursor-pointer"
               to="contact"
               spy={true}
               smooth='easeInOutQuint'
