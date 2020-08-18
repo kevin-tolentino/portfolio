@@ -12,6 +12,10 @@
   min-height: 99vh;
 }
 
+.media-component{
+  min-height: 50vh;
+}
+
 .hero-icon-row{
   /* rgba(15, 76, 129, 0.61) */
   background-color: rgba(20, 29, 57, 0.699);

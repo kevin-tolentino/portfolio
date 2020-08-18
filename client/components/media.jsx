@@ -5,12 +5,10 @@ class MediaSection extends React.Component {
 
     return (
       <div className={this.props.background}>
-        <div id="MediaSection" className="pb-4 container-xl text-white component">
-          <div id="media" className="p-3">
-            <div className="row">
-              <div className="p-3 col">
-                <h2>Media</h2>
-              </div>
+        <div id="media" className="pb-4 container-xl text-white media-component">
+          <div className="row">
+            <div className="p-3 col">
+              <h2>Media</h2>
             </div>
           </div>
           <div className="row">
