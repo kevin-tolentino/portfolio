@@ -28,7 +28,7 @@ class Hello extends React.Component {
             Kevin Tolentino
           </p>
           <p className="title">
-            Software Developer
+            Software Engineer
           </p>
         </div>
       </div>
