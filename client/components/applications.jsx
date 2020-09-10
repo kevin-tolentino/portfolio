@@ -5,8 +5,8 @@ import ReactTooltip from 'react-tooltip';
 
 const applicationList = [
   {
-    name: 'Restvo (Currently Interning Here!)',
-    desc: 'Restvo helps organizations build a fun, easy-to-use, and intentional learning and mentoring community through mobile technology.',
+    name: 'Restvo (Currently interning here!)',
+    desc: 'Restvo helps organizations build an intentional learning and mentoring community through mobile technology.',
     tech: ['Angular', 'Ionic', 'Node.js', 'Express', 'MongoDB', 'Protractor'],
     demo: '/images/app-images/restvo-logo.png',
     gitHub: 'https://github.com/calvinckho/restvo-app',

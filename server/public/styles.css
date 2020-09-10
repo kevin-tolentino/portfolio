@@ -211,6 +211,10 @@ footer{
   margin: 2px;
 }
 
+.restvo-text{
+  font-size: 1.15rem;
+}
+
 .contact-scroll-to-top:hover {
   color: gray;
 }
