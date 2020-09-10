@@ -18,7 +18,7 @@ function ApplicationListItem(props) {
           <LazyLoad height={'100%'} offset={300} once>
             <a href={props.live} target="_blank" rel="noopener noreferrer"><img className="fade-in-opacity card-img-top" src={props.demo} alt={props.name}/></a>
           </LazyLoad>
-          <h5 className="mt-4 card-title text-center">{props.name}</h5>
+          <h5 className={`mt-4 card-title text-center ${props.name.includes('Restvo') ? 'restvo-text' : null}`}>{props.name}</h5>
           <p className="card-text text-center">{props.desc}</p>
           <div className="d-flex justify-content-center">
           </div>
@@ -51,7 +51,7 @@ function ApplicationListItem(props) {
 
 function ApplicationList(props) {
   return (
-    <div className="p-4 row flex-wrap justify-content-between text-dark">
+    <div className="p-4 row flex-wrap text-dark">
       {props.applicationList.map(currentApp => {
         return (
 

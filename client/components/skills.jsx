@@ -10,6 +10,10 @@ const skillsImages = [{
   path: '/images/skills/02-react-original-wordmark.svg'
 },
 {
+  name: 'Angular',
+  path: '/images/skills/09-angularjs-plain.svg'
+},
+{
   name: 'Node.js',
   path: '/images/skills/03-nodejs-original.svg'
 },

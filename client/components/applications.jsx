@@ -5,6 +5,14 @@ import ReactTooltip from 'react-tooltip';
 
 const applicationList = [
   {
+    name: 'Restvo (Currently interning here!)',
+    desc: 'Restvo helps organizations build an intentional learning and mentoring community through mobile technology.',
+    tech: ['Angular', 'Ionic', 'Node.js', 'Express', 'MongoDB', 'Protractor'],
+    demo: '/images/app-images/restvo-logo.png',
+    gitHub: 'https://github.com/calvinckho/restvo-app',
+    live: 'https://www.restvo.com/'
+  },
+  {
     name: 'Itinize',
     desc: 'Itinize is a full-stack web application for travelers who want to organize their travel plans.',
     tech: ['React.js', 'React Router', 'Node.js', 'Express', 'PostgreSQL'],
