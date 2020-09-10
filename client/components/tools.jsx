@@ -15,6 +15,10 @@ const toolsImages = [
     path: '/images/tools/02-visualstudio-plain.svg'
   },
   {
+    name: 'Protractor',
+    path: '/images/tools/11-protractor-plain.svg'
+  },
+  {
     name: 'npm',
     path: '/images/tools/03-npm-original-wordmark.svg'
   },
